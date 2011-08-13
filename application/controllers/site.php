@@ -2,9 +2,15 @@
 
 class Site extends CI_Controller {
        
-        public function index()
+	public function __construct()
 	{
-		$this->load->view('home_view');
+		parent::__construct();
+		$this->load->library('template');
+	}
+	
+	function index()
+	{
+		$this->template->render();
 	}
 }
 
