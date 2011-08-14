@@ -3,26 +3,13 @@
    
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
    <title>Church In Toronto - <?= $title_addition?></title>
-   <link href="css/layout.css" rel="stylesheet" type="text/css" />
-   <style type="text/css">
-      body {
-              background-image: url(images/CIT-Background.png);
-              background-repeat: repeat-x;
-      }
-   </style>
-   <script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
-   <script type="text/javascript" src="swfobject.js"></script>
-   <script type="text/javascript">
-      var flashvars = {};
-      var params = {};
-      params.scale = "noscale";
-      params.salign = "tl";
-      params.wmode = "transparent";
-      params.allowfullscreen = "true";
-      var attributes = {};
-      swfobject.embedSWF("BannerRotatorFX.swf", "BannerRotatorFXDiv", "600", "260", "9.0.0", false, flashvars, params, attributes);
-   </script>
+   
+   <?= $_styles ?>
+   
+   <?= $_scripts ?>
+   
 </head>
 
 <body>
@@ -40,8 +27,9 @@
         <a href="index.html"> Home </a><a href="about.html"> About </a><a href="media.html"> Media </a><a href="ministries.html"> Ministries </a><a href="community.html"> Community </a> 
       </div>
      
-      <?= $body ?>
+      <?= $menu ?>
      
+      <?= $body ?>
       
       <?= $content ?>
      

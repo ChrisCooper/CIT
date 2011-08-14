@@ -55,6 +55,13 @@ $template['default']['regions'] = array(
     'title_addition',
     'header_user_info',
     
+    'menu' => array(
+        'content' => array(''),
+        'name' => 'Page Menu',
+        'wrapper' => '<div>',
+        'attributes' => array('id' => 'menu')
+    ),
+    
     'body' => array(
         'content' => array(''),
         'name' => 'Page Body',

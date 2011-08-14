@@ -19,6 +19,9 @@ class Home extends CI_Controller {
       
 		//Render template
 		$this->template->render();
+		
+		
+		//<link href="css/layout.css" rel="stylesheet" type="text/css" />
 	}
 }
 
