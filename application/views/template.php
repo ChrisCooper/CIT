@@ -16,7 +16,7 @@
    <div id="wrapper">
      
       <div id="header">
-          <a href="index.html">Home</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="contactus.html">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<?= $header_user_info ?>
+          <a href="<?= site_url(""); ?>">Home</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="<?= site_url("contact_us");?>">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<?= $header_user_info ?>
       </div>
      
       <div id="logo">
@@ -24,8 +24,9 @@
       </div>
      
       <div id="navbar">
-        <a href="index.html"> Home </a><a href="about.html"> About </a><a href="media.html"> Media </a><a href="ministries.html"> Ministries </a><a href="community.html"> Community </a> 
+        <a href="<?=site_url("");?>"> Home </a><a href="<?= site_url("about"); ?>"> About </a><a href="<?= site_url("media"); ?>"> Media </a><a href="<?= site_url("ministries"); ?>"> Ministries </a><a href="<?= site_url("community"); ?>"> Community </a> 
       </div>
+      
      
       <?= $menu ?>
      
@@ -43,7 +44,7 @@
     
       <div id="footer">
          <div id="minilogo"><a href="index.html"><img src="images/CIT-Mini-Logo.png" width="126" height="47" alt="minilogo" longdesc="Church In Toronto" /></a></div>
-         <div id="sitemap"><a href="index.html">Home</a>  &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="about.html">About</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="media.html">Media</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="ministries.html">Ministries</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="community.html">Community</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="service-location.html">Service Times and Location</a> &nbsp;&nbsp;|&nbsp;&nbsp;<a href="contactus.html">  Contact Us</a></div>
+         <div id="sitemap"><a href="<?= site_url(""); ?>">Home</a>  &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<?= site_url("about"); ?>">About</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<?= site_url("media"); ?>">Media</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<?= site_url("ministries"); ?>">Ministries</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<?= site_url("community"); ?>">Community</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<?= site_url("about/service_time_location"); ?>">Service Times and Location</a> &nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?= site_url("contact_us"); ?>">  Contact Us</a></div>
          <div id="copy">Copyright 2011 Church In Toronto. All Rights Reserved.</div>
       </div>
    

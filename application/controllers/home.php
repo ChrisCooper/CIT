@@ -6,6 +6,7 @@ class Home extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->library('template');
+		$this->load->helper('url');
 	}
 	
 	function index()
