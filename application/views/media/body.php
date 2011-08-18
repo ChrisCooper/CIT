@@ -63,14 +63,14 @@
      Latest Messages
     </h2>
     <br />
-    <img src="images/CIT-Page-Break.png" width="500" height="5" />
+    <img src="<?= image_url("CIT-Page-Break.png"); ?>" width="500" height="5" />
     <div id="message">
-     <a href="" onclick="window.open('listen.html','mywindow','width=550,height=160')">
-      <img src="images/Luke-Icon.png" width="50" height="50" alt="luke" />
+     <a href="" onclick="window.open('<?= site_url("listen"); ?>','mywindow','width=550,height=160')">
+      <img src="<?= image_url("Luke-Icon.png"); ?>" width="50" height="50" alt="luke" />
      </a>
      <div id="info">
       <strong>
-       <a href="" onclick="window.open('listen.html','mywindow','width=550,height=160')">
+       <a href="" onclick="window.open('<?= site_url("listen"); ?>','mywindow','width=550,height=160')">
         Luke: Following the Master's Footsteps - Being Scattered and Gathered
        </a>
       </strong>
@@ -83,12 +83,12 @@
      </div>
     </div>
     <div id="message">
-     <a href="" onclick="window.open('listen.html','mywindow','width=550,height=160')">
-      <img src="images/Luke-Icon.png" width="50" height="50" alt="luke" />
+     <a href="" onclick="window.open('<?= site_url("listen"); ?>','mywindow','width=550,height=160')">
+      <img src="<?= image_url("Luke-Icon.png"); ?>" width="50" height="50" alt="luke" />
      </a>
      <div id="info">
       <strong>
-       <a href="" onclick="window.open('listen.html','mywindow','width=550,height=160')">
+       <a href="" onclick="window.open('<?= site_url("listen"); ?>','mywindow','width=550,height=160')">
         Luke: Following the Master's Footsteps - Have You Found
        </a>
       </strong>
@@ -101,12 +101,12 @@
      </div>
     </div>
     <div id="message">
-     <a href="" onclick="window.open('listen.html','mywindow','width=550,height=160')">
-      <img src="images/Luke-Icon.png" width="50" height="50" alt="luke" />
+     <a href="" onclick="window.open('<?= site_url("listen"); ?>','mywindow','width=550,height=160')">
+      <img src="<?= image_url("Luke-Icon.png"); ?>" width="50" height="50" alt="luke" />
      </a>
      <div id="info">
       <strong>
-       <a href="" onclick="window.open('listen.html','mywindow','width=550,height=160')">
+       <a href="" onclick="window.open('<?= site_url("listen"); ?>','mywindow','width=550,height=160')">
         Luke: Following the Master's Footsteps - Jesus: Saviour To Everyone In...
        </a>
       </strong>
@@ -119,7 +119,7 @@
      </div>
     </div>
     <div id="message">
-     <img src="images/Luke-Icon.png" width="50" height="50" alt="luke" />
+     <img src="<?= image_url("Luke-Icon.png"); ?>" width="50" height="50" alt="luke" />
      <div id="info">
       <strong>
        Luke: Following the Master's Footsteps - When Things
@@ -133,7 +133,7 @@
      </div>
     </div>
     <div id="message">
-     <img src="images/Luke-Icon.png" width="50" height="50" alt="luke" />
+     <img src="<?= image_url("Luke-Icon.png"); ?>" width="50" height="50" alt="luke" />
      <div id="info">
       <strong>
        Luke: Following the Master's Footsteps - When Things
@@ -147,7 +147,7 @@
      </div>
     </div>
     <div id="message">
-     <img src="images/Luke-Icon.png" width="50" height="50" alt="luke" />
+     <img src="<?= image_url("Luke-Icon.png"); ?>" width="50" height="50" alt="luke" />
      <div id="info">
       <strong>
        Luke: Following the Master's Footsteps - When Things
@@ -161,7 +161,7 @@
      </div>
     </div>
     <div id="message">
-     <img src="images/Luke-Icon.png" width="50" height="50" alt="luke" />
+     <img src="<?= image_url("Luke-Icon.png"); ?>" width="50" height="50" alt="luke" />
      <div id="info">
       <strong>
        Luke: Following the Master's Footsteps - When Things
@@ -175,7 +175,7 @@
      </div>
     </div>
     <div id="message">
-     <img src="images/Luke-Icon.png" width="50" height="50" alt="luke" />
+     <img src="<?= image_url("Luke-Icon.png"); ?>" width="50" height="50" alt="luke" />
      <div id="info">
       <strong>
        Luke: Following the Master's Footsteps - When Things
@@ -189,7 +189,7 @@
      </div>
     </div>
     <div id="message">
-     <img src="images/Luke-Icon.png" width="50" height="50" alt="luke" />
+     <img src="<?= image_url("Luke-Icon.png"); ?>" width="50" height="50" alt="luke" />
      <div id="info">
       <strong>
        Luke: Following the Master's Footsteps - When Things

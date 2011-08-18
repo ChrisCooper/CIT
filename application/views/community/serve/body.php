@@ -1,5 +1,5 @@
 <div id="left">
-    <img src="images/CIT-Serve-icon.png" width="150" height="120" />
+    <img src="<?= image_url("CIT-Serve-icon.png"); ?>" width="150" height="120" />
     <p>
      &nbsp;
     </p>

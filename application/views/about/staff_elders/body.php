@@ -18,7 +18,7 @@
        Nigel Tomes
       </h2>
       <p>
-       <img src="images/person-no-image.jpg" width="100" height="100" />
+       <img src="<?= image_url("person-no-image.jpg"); ?>" width="100" height="100" />
       </p>
      </div>
      <div id="staff2">
@@ -26,7 +26,7 @@
        Del Martin
       </h2>
       <p>
-       <img src="images/person-no-image.jpg" width="100" height="100" />
+       <img src="<?= image_url("person-no-image.jpg"); ?>" width="100" height="100" />
       </p>
      </div>
      <div id="staff3">
@@ -34,7 +34,7 @@
        Ian Brinksman
       </h2>
       <p>
-       <img src="images/person-no-image.jpg" width="100" height="100" />
+       <img src="<?= image_url("person-no-image.jpg"); ?>" width="100" height="100" />
       </p>
      </div>
      <div id="staff4">
@@ -42,7 +42,7 @@
        Peter Cho
       </h2>
       <p>
-       <img src="images/person-no-image.jpg" width="100" height="100" />
+       <img src="<?= image_url("person-no-image.jpg"); ?>" width="100" height="100" />
       </p>
      </div>
      <div id="staff5">
@@ -50,7 +50,7 @@
        Jane Suerte
       </h2>
       <p>
-       <img src="images/person-no-image.jpg" width="100" height="100" />
+       <img src="<?= image_url("person-no-image.jpg"); ?>" width="100" height="100" />
       </p>
      </div>
      <br />
@@ -65,7 +65,7 @@
        Steve Pritchard
       </h2>
       <p>
-       <img src="images/person-no-image.jpg" width="100" height="100" />
+       <img src="<?= image_url("person-no-image.jpg"); ?>" width="100" height="100" />
       </p>
      </div>
      <div id="elder2">
@@ -73,7 +73,7 @@
        Nigel Tomes
       </h2>
       <p>
-       <img src="images/person-no-image.jpg" width="100" height="100" />
+       <img src="<?= image_url("person-no-image.jpg"); ?>" width="100" height="100" />
       </p>
      </div>
      <div id="elder3">
@@ -81,7 +81,7 @@
        Jonathan P'ng
       </h2>
       <p>
-       <img src="images/person-no-image.jpg" width="100" height="100" />
+       <img src="<?= image_url("person-no-image.jpg"); ?>" width="100" height="100" />
       </p>
      </div>
      <div id="elder4">
@@ -89,7 +89,7 @@
        Bob Duncan
       </h2>
       <p>
-       <img src="images/person-no-image.jpg" width="100" height="100" />
+       <img src="<?= image_url("person-no-image.jpg"); ?>" width="100" height="100" />
       </p>
      </div>
      <div id="elder5">
@@ -97,7 +97,7 @@
        Soon-Ong Seo
       </h2>
       <p>
-       <img src="images/person-no-image.jpg" width="100" height="100" />
+       <img src="<?= image_url("person-no-image.jpg"); ?>" width="100" height="100" />
       </p>
      </div>
     </div>

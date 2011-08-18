@@ -7,6 +7,7 @@ class About extends CI_Controller {
 		parent::__construct();
 		$this->load->library('template');
 		$this->load->helper('url');
+		$this->load->helper('resource');
 	}
 	
 	function _static_parts() {
@@ -14,7 +15,7 @@ class About extends CI_Controller {
 	      $this->template->write_view('header_user_info', 'header_user_info_default');
 	      $this->template->write_view('menu', 'about/menu');
 		
-	      //<link href="css/aboutlayout.css" rel="stylesheet" type="text/css" />
+	      $this->template->write('_styles', style_tag(style_url('aboutlayout.css')));
 	}
 	
 	function index() {

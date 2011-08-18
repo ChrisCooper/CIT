@@ -1,19 +1,19 @@
-<a href="about.html">
+<a href="<?= site_url("about"); ?>">
     Our Church
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="what-we-believe.html">
+<a href="<?= site_url("about/what_we_believe"); ?>">
     What We Believe
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="events.html">
+<a href="<?= site_url("about/events"); ?>">
     Events
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="service-location.html">
+<a href="<?= site_url("about/service_time_location"); ?>">
     Service Time &amp; Location
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="staff-elders.html">
+<a href="<?= site_url("about/staff_elders"); ?>">
     Church Staff &amp; Elders
 </a>

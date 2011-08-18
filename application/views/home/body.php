@@ -26,8 +26,8 @@
  </div>
  <div id="upevents">
     <div id="top">
-       <div id="text"><img src="images/CIT-Upcoming-Events.png" width="180" height="28" alt="Upcoming Events" /></div>
-       <div id="more"><a href="events.html"><img src="images/More-btn.png" width="58" height="26" alt="morebtn" /></a></div>
+       <div id="text"><img src="<?= image_url("CIT-Upcoming-Events.png"); ?>" width="180" height="28" alt="Upcoming Events" /></div>
+       <div id="more"><a href="<?= site_url("about/events"); ?>"><img src="<?= image_url("More-btn.png"); ?>" width="58" height="26" alt="morebtn" /></a></div>
     </div>
     <div id="bottom">
  

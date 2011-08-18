@@ -7,20 +7,21 @@ class Community extends CI_Controller {
 		parent::__construct();
 		$this->load->library('template');
 		$this->load->helper('url');
+		$this->load->helper('resource');
 	}
 	
 	function _static_parts() {
 	      //Render sub-views
 	      $this->template->write_view('header_user_info', 'header_user_info_default');
 		
-	      /*<link href="css/communitylayout.css" rel="stylesheet" type="text/css" />
-		<style type="text/css">
-			body {
-				background-image: url(images/CIT-Blank-Background.png);
-				background-repeat: repeat-x;
-			}
-		</style>*/
-	      
+		
+	      $styles = style_tag(style_url('communitylayout.css'));
+	      $styles = $styles . '<style type="text/css">
+                 body {
+                      background-image: url(../images/CIT-Blank-Background.png);
+                      background-repeat: repeat-x;
+                }</style>';
+	      $this->template->write('_styles', $styles);
 	}
 	
 	function index() {

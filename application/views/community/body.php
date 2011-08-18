@@ -1,18 +1,18 @@
 <div id="main">
     <div id="connect">
-        <a href="connect.html">
+        <a href="<?= site_url("community/connect"); ?>">
         </a>
     </div>
     <div id="serve">
-        <a href="serve.html">
+        <a href="<?= site_url("community/serve"); ?>">
         </a>
     </div>
     <div id="pray">
-        <a href="#">
+        <a href="<?= site_url("community"); ?>">
         </a>
     </div>
     <div id="reach">
-        <a href="#">
+        <a href="<?= site_url("community"); ?>">
         </a>
     </div>
 </div>

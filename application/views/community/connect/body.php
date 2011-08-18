@@ -1,5 +1,5 @@
 <div id="left">
-    <img src="images/CIT-Connect-Title.png" width="150" height="120" />
+    <img src="<?= image_url("CIT-Connect-Title.png"); ?>" width="150" height="120" />
     <br />
     <p>
      &nbsp;
