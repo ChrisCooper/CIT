@@ -15,7 +15,9 @@ class About extends CI_Controller {
 	      $this->template->write_view('header_user_info', 'header_user_info_default');
 	      $this->template->write_view('menu', 'about/menu');
 		
-	      $this->template->write('_styles', style_tag(style_url('aboutlayout.css')));
+	      $styles = style_tag(style_url('layout.css'));
+	      $styles = $styles . style_tag(style_url('about_layout.css'));
+	      $this->template->write('_styles', $styles);
 	}
 	
 	function index() {

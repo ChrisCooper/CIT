@@ -1,0 +1,221 @@
+#body {
+	height: 337px;
+}
+#body #banner {
+	background-color: #FFF;
+	clear: both;
+	float: left;
+	width: 470px;
+	height: 294px;
+	margin-top: 16px;
+	margin-left: 14px;
+	padding: 5px;
+}
+#body #upevents {
+	clear: none;
+	float: right;
+	height: 304px;
+	width: 286px;
+	margin-top: 16px;
+	margin-right: 14px;
+}
+#body #upevents h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #072A3B;
+	text-decoration: none;
+	line-height: 12px;
+	margin-top: 1px;
+}
+#body #upevents h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #F90;
+	text-decoration: none;
+	line-height: 12px;
+}
+#body #upevents p {
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 10px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000;
+}
+#body #upevents #top {
+	background-color: #072a3b;
+	height: 38px;
+}
+#body #upevents #top #text {
+	margin-top: 5px;
+	margin-left: 22px;
+	clear: right;
+	float: left;
+}
+#body #upevents #top #more {
+	float: right;
+	margin-top: 6px;
+	margin-right: 10px;
+}
+#body #upevents #bottom {
+	background-color: #FFF;
+	height: 250px;
+	margin-top: 16px;
+}
+#body #upevents #bottom #info {
+	height: 45px;
+	width: 267px;
+	margin-right: 7px;
+	margin-left: 13px;
+	margin-top: 13px;
+	float: right;
+}
+#body #upevents #bottom #info #icon a{
+	clear: right;
+	float: left;
+	height: 38px;
+	width: 45px;
+	background-color: #A39E9B;
+	display: block;
+	text-align: center;
+	padding-top: 7px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+	margin-right: 10px;
+}
+#body #upevents #bottom #info #icon a:hover {
+	background-color: #CBC5C3;
+}
+#body #upevents #bottom #info #text {
+	height: 45px;
+	width: 267px;
+}
+#content {
+	height: 375px;
+}
+#content #updates {
+	clear: both;
+	float: left;
+	background-image: url(../images/CIT-Recent-Updates-Box.png);
+	height: 253px;
+	width: 460px;
+	margin-left: 9px;
+	margin-top: 15px;
+	padding-top: 50px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+#content #updates #info {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 58px;
+	width: 460px;
+	margin-top: 6px;
+}
+#content #updates #info #text p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333;
+	line-height: 12px;
+}
+#content #updates #info #text a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #072A3B;
+	text-decoration: none;
+	line-height: 12px;
+}
+#content #updates #info #text h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 12px;
+	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+}
+#content #updates #info #icon {
+	height: 52px;
+	width: 76px;
+	margin-top: 3px;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	margin-left: 8px;
+	clear: right;
+	float: left;
+}
+#content #updates #info #text {
+	width: 350px;
+	height: 52px;
+	clear: right;
+	float: left;
+	margin-top: 3px;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	margin-left: 20px;
+}
+#body #upevents a img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+#content #servloc {
+	clear: none;
+	float: right;
+	height: 318px;
+	width: 296px;
+	background-image: url(../images/CIT-Sched-Loc-Box.png);
+	margin-right: 9px;
+	margin-top: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333;
+	text-decoration: none;
+}
+#content #servloc h1  {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #072A56;
+}
+#content #servloc #times {
+	padding-top: 65px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+	padding-left: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: normal;
+	height: 90px;
+}
+#content #servloc #times #left {
+	font-family: Arial, Helvetica, sans-serif;
+	clear: right;
+	float: left;
+	margin-right: 20px;
+}
+#content #servloc #times #right {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	width: 60px;
+	float: left;
+}
+#content #servloc #address {
+	height: 88px;
+	padding-top: 0px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+	padding-left: 40px;
+}

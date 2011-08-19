@@ -14,8 +14,8 @@ class Community extends CI_Controller {
 	      //Render sub-views
 	      $this->template->write_view('header_user_info', 'header_user_info_default');
 		
-		
-	      $styles = style_tag(style_url('communitylayout.css'));
+	      $styles = style_tag(style_url('layout.css'));
+	      $styles = $styles . style_tag(style_url('community_layout.css'));
 	      $styles = $styles . '<style type="text/css">
                  body {
                       background-image: url(../images/CIT-Blank-Background.png);

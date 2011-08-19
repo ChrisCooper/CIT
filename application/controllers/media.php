@@ -11,7 +11,8 @@ class Media extends CI_Controller {
 	}
 	
 	function _write_resources() {
-	        $styles = style_tag(style_url('medialayout.css'));
+	        $styles = style_tag(style_url('layout.css'));
+	        $styles = $styles . style_tag(style_url('media_layout.css'));
 		$styles = $styles . '<style type="text/css">
                  body {
                       background-image: url(../images/CIT-Blank-Background.png);

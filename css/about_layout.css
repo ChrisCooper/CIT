@@ -1,0 +1,227 @@
+
+body {
+	background-repeat: repeat-x;
+	background-image: url(../images/CIT-About-Background.png);
+}
+
+#menu {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 25px;
+}
+#menu a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+}
+
+#body #events {
+	clear: right;
+	float: left;
+	width: 755px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #333;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	margin-top: 25px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	margin-left: 0px;
+}
+#body #events h1 {
+	color: #072a3b;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+#body #left {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333;
+	text-decoration: none;
+	width: 175px;
+	margin-top: 35px;
+	padding-left: 25px;
+	clear: right;
+	float: left;
+	padding-right: 25px;
+}
+#body #left p {
+	font-size: 12px;
+}
+#body #left h2 {
+	font-size: 16px;
+	color: #072A3B;
+}
+#body #right {
+	clear: right;
+	float: left;
+	width: 530px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #333;
+	background-image: url(../images/CIT-Page-Splitter.png);
+	background-repeat: repeat-y;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	margin-top: 25px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	margin-left: 0px;
+}
+#body #right p {
+	font-size: 12px;
+	text-decoration: none;
+}
+#body #right h1 {
+	color: #072a3b;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	text-decoration: none;
+}
+#body #right h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #06F;
+}
+#body #right #event {
+	height: 50px;
+	width: 515px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+}
+#body #right #event #date a{
+	height: 41px;
+	width: 50px;
+	clear: right;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #AAA29E;
+	text-align: center;
+	display: block;
+	padding-top: 9px;
+	text-decoration: none;
+	line-height: 16px;
+}
+#body #right #event #date a:hover {
+	background-color: #BDB6B3;
+}
+#body #right #event #info {
+	clear: right;
+	float: left;
+	height: 50px;
+	width: 455px;
+	margin-left: 10px;
+}
+#body #right #event #info h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #F90;
+	line-height: 16px;
+}
+#body #right #event #info h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: normal;
+	text-decoration: none;
+}
+#body #right #event #info p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000;
+	text-decoration: none;
+	font-weight: normal;
+}
+#body #right #schedright {
+	clear: right;
+	float: left;
+}
+#body #right #schedleft {
+	float: none;
+	margin-left: 100px;
+}
+#body #right #googlemap {
+	font-family: Arial, Helvetica, sans-serif;
+}
+#body #right #googlemap a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+	text-decoration: none;
+}
+
+#body #right p img {
+	margin-top: 10px;
+}
+#body #right #staff1 {
+	clear: right;
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 25px;
+}
+#body #right #staff2 {
+	clear: right;
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 25px;
+}
+#body #right #staff3 {
+	clear: right;
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 25px;
+}
+#body #right #staff4 {
+	clear: right;
+	float: left;
+	margin-bottom: 25px;
+	margin-right: 10px;
+}
+#body #right #staff5 {
+	margin-right: 40px;
+	margin-bottom: 25px;
+	clear: right;
+	float: left;
+	width: 500px;
+}
+#body #right #elder1 {
+	clear: right;
+	float: left;
+	margin-right: 35px;
+	margin-bottom: 25px;
+}
+#body #right #elder2 {
+	clear: right;
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 25px;
+}
+#body #right #elder3 {
+	clear: right;
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 25px;
+}
+#body #right #elder4 {
+	clear: right;
+	float: left;
+	margin-bottom: 25px;
+}
+#body #right #elder5 {
+	margin-bottom: 25px;
+	clear: right;
+	float: left;
+}
+

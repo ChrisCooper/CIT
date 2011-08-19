@@ -7,7 +7,7 @@
 	margin-left: auto;
 	height: 0px;
 }
-#wrapper #header {
+#header {
 	text-align:right;
 	clear: both;
 	font-family: Arial, Helvetica, sans-serif;
@@ -18,20 +18,21 @@
 	font-variant: normal;
 	color: #333;
 	height: 18px;
+	background-color: rgb(215,214,210);
 	padding-top: 4px;
 	margin-right: 15px;
 }
-#wrapper #header a {
+#header a {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	font-style: normal;
 	color: #333;
 	text-decoration: none;
 }
-#wrapper #logo {
+#logo {
 	height: 170px;
 }
-#wrapper #logo img {
+#logo img {
 	margin-top: 25px;
 	border-top-style: none;
 	border-right-style: none;
@@ -39,7 +40,7 @@
 	border-left-style: none;
 	margin-left: 20px;
 }
-#wrapper #navbar {
+#navbar {
 	margin-bottom: 10px;
 	border-top-width: 0px;
 	border-right-width: 0px;
@@ -51,7 +52,7 @@
 	border-left-style: none;
 	height: 43px;
 }
-#wrapper #navbar a {
+#navbar a {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 19px;
 	font-weight: normal;
@@ -70,237 +71,17 @@
 	background-repeat: no-repeat;
 	background-position: left top;
 }
-#wrapper #navbar a:hover {
+#navbar a:hover {
 	background-position: bottom;
 }
-#wrapper #body {
-	height: 337px;
-}
-#wrapper #body #banner {
-	background-color: #FFF;
-	clear: both;
-	float: left;
-	width: 470px;
-	height: 294px;
-	margin-top: 16px;
-	margin-left: 14px;
-	padding: 5px;
-}
-#wrapper #body #upevents {
-	clear: none;
-	float: right;
-	height: 304px;
-	width: 286px;
-	margin-top: 16px;
-	margin-right: 14px;
-}
-#wrapper #body #upevents h1 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	font-weight: bold;
-	color: #072A3B;
-	text-decoration: none;
-	line-height: 12px;
-	margin-top: 1px;
-}
-#wrapper #body #upevents h2 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	font-weight: bold;
-	color: #F90;
-	text-decoration: none;
-	line-height: 12px;
-}
-#wrapper #body #upevents p {
-	font-size: 10px;
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 10px;
-	font-weight: normal;
-	text-decoration: none;
-	color: #000;
-}
-#wrapper #body #upevents #top {
-	background-color: #072a3b;
-	height: 38px;
-}
-#wrapper #body #upevents #top #text {
-	margin-top: 5px;
-	margin-left: 22px;
-	clear: right;
-	float: left;
-}
-#wrapper #body #upevents #top #more {
-	float: right;
-	margin-top: 6px;
-	margin-right: 10px;
-}
-#wrapper #body #upevents #bottom {
-	background-color: #FFF;
-	height: 250px;
-	margin-top: 16px;
-}
-#wrapper #body #upevents #bottom #info {
-	height: 45px;
-	width: 267px;
-	margin-right: 7px;
-	margin-left: 13px;
-	margin-top: 13px;
-	float: right;
-}
-#wrapper #body #upevents #bottom #info #icon a{
-	clear: right;
-	float: left;
-	height: 38px;
-	width: 45px;
-	background-color: #A39E9B;
-	display: block;
-	text-align: center;
-	padding-top: 7px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	color: #FFF;
-	text-decoration: none;
-	font-weight: bold;
-	margin-right: 10px;
-}
-#wrapper #body #upevents #bottom #info #icon a:hover {
-	background-color: #CBC5C3;
-}
-#wrapper #body #upevents #bottom #info #text {
-	height: 45px;
-	width: 267px;
-}
-#wrapper #content {
-	height: 375px;
-}
-#wrapper #content #updates {
-	clear: both;
-	float: left;
-	background-image: url(../images/CIT-Recent-Updates-Box.png);
-	height: 253px;
-	width: 460px;
-	margin-left: 9px;
-	margin-top: 15px;
-	padding-top: 50px;
-	padding-right: 15px;
-	padding-bottom: 15px;
-	padding-left: 15px;
-}
-#wrapper #content #updates #info {
-	font-family: Arial, Helvetica, sans-serif;
-	height: 58px;
-	width: 460px;
-	margin-top: 6px;
-}
-#wrapper #content #updates #info #text p {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 11px;
-	color: #333;
-	line-height: 12px;
-}
-#wrapper #content #updates #info #text a {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	font-weight: bold;
-	color: #072A3B;
-	text-decoration: none;
-	line-height: 12px;
-}
-#wrapper #content #updates #info #text h1 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 11px;
-	line-height: 12px;
-	font-weight: bold;
-	color: #333;
-	text-decoration: none;
-}
-#wrapper #content #updates #info #icon {
-	height: 52px;
-	width: 76px;
-	margin-top: 3px;
-	margin-right: 3px;
-	margin-bottom: 3px;
-	margin-left: 8px;
-	clear: right;
-	float: left;
-}
-#wrapper #content #updates #info #text {
-	width: 350px;
-	height: 52px;
-	clear: right;
-	float: left;
-	margin-top: 3px;
-	margin-right: 3px;
-	margin-bottom: 3px;
-	margin-left: 20px;
-}
-#wrapper #body #upevents a img {
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-	border-top-width: 0px;
-	border-right-width: 0px;
-	border-bottom-width: 0px;
-	border-left-width: 0px;
-}
-#wrapper #content #servloc {
-	clear: none;
-	float: right;
-	height: 318px;
-	width: 296px;
-	background-image: url(../images/CIT-Sched-Loc-Box.png);
-	margin-right: 9px;
-	margin-top: 15px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	font-weight: normal;
-	color: #333;
-	text-decoration: none;
-}
-#wrapper #content #servloc h1  {
-	font-size: 16px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	color: #072A56;
-}
-#wrapper #content #servloc #times {
-	padding-top: 65px;
-	padding-right: 25px;
-	padding-bottom: 25px;
-	padding-left: 40px;
-	font-family: Arial, Helvetica, sans-serif;
-	text-decoration: none;
-	font-size: 12px;
-	font-weight: normal;
-	height: 90px;
-}
-#wrapper #content #servloc #times #left {
-	font-family: Arial, Helvetica, sans-serif;
-	clear: right;
-	float: left;
-	margin-right: 20px;
-}
-#wrapper #content #servloc #times #right {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	width: 60px;
-	float: left;
-}
-#wrapper #content #servloc #address {
-	height: 88px;
-	padding-top: 0px;
-	padding-right: 25px;
-	padding-bottom: 25px;
-	padding-left: 40px;
-}
-#wrapper #social {
+
+#social {
 	height: 50px;
 	clear: both;
 	background-image: url(../images/CIT-Small-Social-Bar.png);
 	background-repeat: no-repeat;
 }
-#wrapper #social a img{
+#social a img{
 	border-top-width: 0px;
 	border-right-width: 0px;
 	border-bottom-width: 0px;
@@ -310,46 +91,46 @@
 	border-bottom-style: none;
 	border-left-style: none;
 }
-#wrapper #social #newsletter {
+#social #newsletter {
 	clear: right;
 	float: left;
 	margin-top: 17px;
 	margin-left: 27px;
 }
-#wrapper #social #blog {
+#social #blog {
 	clear: right;
 	float: left;
 	margin-top: 10px;
 	margin-left: 45px;
 }
-#wrapper #social #flickr {
+#social #flickr {
 	clear: right;
 	float: left;
 	margin-top: 15px;
 	margin-left: 50px;
 }
-#wrapper #social #vimeo {
+#social #vimeo {
 	clear: right;
 	float: left;
 	margin-top: 13px;
 	margin-left: 50px;
 }
-#wrapper #social #facebook {
+#social #facebook {
 	margin-top: 15px;
 	margin-left: 48px;
 	clear: right;
 	float: left;
 }
-#wrapper #footer {
+#footer {
 	height: 130px;
 }
-#wrapper #footer #minilogo {
+#footer #minilogo {
 	float: left;
 	margin-top: 28px;
 	margin-left: 20px;
 	clear: right;
 }
-#wrapper #footer #minilogo a img {
+#footer #minilogo a img {
 	border-top-width: 0px;
 	border-right-width: 0px;
 	border-bottom-width: 0px;
@@ -359,7 +140,7 @@
 	border-bottom-style: none;
 	border-left-style: none;
 }
-#wrapper #footer #sitemap {
+#footer #sitemap {
 	float: left;
 	margin-top: 38px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -369,13 +150,13 @@
 	margin-left: 30px;
 	clear: none;
 }
-#wrapper #footer #sitemap a {
+#footer #sitemap a {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	text-decoration: none;
 	color: #666;
 }
-#wrapper #footer #copy {
+#footer #copy {
 	font-family: Arial, Helvetica, sans-serif;
 	float: left;
 	clear: none;

@@ -11,7 +11,8 @@ class Ministries extends CI_Controller {
 	}
 	
 	function _write_resources() {
-	        $styles = style_tag(style_url('ministrieslayout.css'));
+	        $styles = style_tag(style_url('layout.css'));
+	        $styles = $styles . style_tag(style_url('ministries_layout.css'));
 		$styles = $styles . '<style type="text/css">
                  body {
                       background-image: url(../images/CIT-Blank-Background.png);

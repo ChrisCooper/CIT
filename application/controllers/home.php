@@ -12,6 +12,7 @@ class Home extends CI_Controller {
 	
 	function _write_resources() {
 	        $styles = style_tag(style_url('layout.css'));
+		$styles = $styles . style_tag(style_url('home_layout.css'));
 		$styles = $styles . '<style type="text/css">
                  body {
                       background-image: url(images/CIT-Background.png);

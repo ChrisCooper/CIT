@@ -11,7 +11,8 @@ class Contact_us extends CI_Controller {
 	}
 	
 	function _write_resources() {
-	        $styles = style_tag(style_url('contactlayout.css'));
+		$styles = style_tag(style_url('layout.css'));
+	        $styles = $styles . style_tag(style_url('contact_layout.css'));
 		$styles = $styles . '<style type="text/css">
                  body {
                       background-image: url(../images/CIT-Blank-Background.png);
