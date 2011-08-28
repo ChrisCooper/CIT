@@ -50,6 +50,9 @@ $template['active_template'] = 'default';
 |
 */
 
+
+// ---- DEFAULT ----
+
 $template['default']['template'] = 'template';
 $template['default']['regions'] = array(
     'title_addition',
@@ -80,6 +83,25 @@ $template['default']['regions'] = array(
 $template['default']['parser'] = 'parser';
 $template['default']['parser_method'] = 'parse';
 $template['default']['parse_template'] = FALSE;
+
+
+// ---- ADMIN ----
+
+$template['admin']['template'] = 'admin';
+$template['admin']['regions'] = array(
+    'title_addition',
+    
+    'main_items' => array(
+        'content' => array(''),
+        'name' => 'Main Items',
+        'wrapper' => '<div>',
+        'attributes' => array('id' => 'main_items')
+    ),
+);
+
+$template['admin']['parser'] = 'parser';
+$template['admin']['parser_method'] = 'parse';
+$template['admin']['parse_template'] = FALSE;
 
 /* End of file template.php */
 /* Location: ./system/application/config/template.php */
