@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+    RewriteBase /public/
+
+    #__ Rewrite requests to anything here through index.php,
+    #__ except requests already through it
+    RewriteCond %{REQUEST_URI}  !^/public/index.php/.*
+    RewriteRule ^(.*)$ /public/index.php/$1 [L]
+
+</IfModule>
+ 
+<IfModule !mod_rewrite.c>
+
+    #__ If we don’t have mod_rewrite installed, all 404’s
+    #__ can be sent to index.php, and everything works as normal.
+    ErrorDocument 404 /public/index.php
+
+</IfModule>

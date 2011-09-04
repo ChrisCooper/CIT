@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+    RewriteBase /
+
+    #__ Rewrite requests to anything here through index.php,
+    #__ except requests already through it, or resource requests
+    RewriteCond %{REQUEST_URI}  !^/(admin|public|images|css|scripts|messages)/.*
+    RewriteRule ^(.*)$ /public/$1 [L]
+
+</IfModule>
+ 
+<IfModule !mod_rewrite.c>
+
+    #__ If we don't have mod_rewrite installed, all 404's
+    #__ can be sent to index.php, and everything works as normal.
+    ErrorDocument 404 /admin/index.php
+
+</IfModule>

@@ -1,0 +1,82 @@
+#body #main {
+	background-image: url(../images/CIT-Community-Main.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 0px;
+	padding: 0px;
+	height: 550px;
+}
+#body #main #connect {
+	margin-top: 130px;
+	margin-left: 386px;
+	clear: right;
+	float: left;
+	margin-right: 248px;
+}
+#body #main #connect a {
+	background-image: url(../images/CIT-Connect-Roll.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	height: 52px;
+	width: 176px;
+	clear: right;
+	float: left;
+}
+#body #main #connect a:hover {
+	background-position: bottom;
+}
+#body #main #serve {
+	margin-top: 53px;
+	margin-left: 167px;
+	clear: right;
+	float: left;
+	margin-right: 467px;
+}
+#body #main #serve  a{
+	background-image: url(../images/CIT-Serve-roll.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	height: 52px;
+	width: 176px;
+}
+#body #main #serve a:hover {
+	background-position: bottom;
+}
+#body #main #pray {
+	clear: right;
+	float: left;
+	margin-left: 565px;
+	margin-top: 5px;
+	margin-right: 70px;
+}
+#body #main #pray a {
+	background-image: url(../images/CIT-Pray-roll.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	height: 52px;
+	width: 176px;
+}
+#body #main #pray a:hover {
+	background-position: bottom;
+}
+#body #main #reach {
+	clear: right;
+	float: left;
+	margin-top: 22px;
+	margin-left: 353px;
+	margin-right: 282px;
+}
+#body #main #reach a {
+	background-image: url(../images/CIT-Reach-roll.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 176px;
+	display: block;
+}
+#body #main #reach a:hover {
+	background-position: bottom;
+}
