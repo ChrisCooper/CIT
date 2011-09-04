@@ -1,6 +1,6 @@
 <?php
 
-class Admin extends CI_Controller {
+class Messages extends CI_Controller {
        
 	public function __construct()
 	{
@@ -22,7 +22,7 @@ class Admin extends CI_Controller {
 	      $this->template->write_view('header_user_info', 'header_user_info_default');
 		
 	      $styles = style_tag(style_url('layout.css'));
-	      $styles = $styles . style_tag(style_url('about_layout.css'));
+	      $styles = $styles . style_tag(style_url('admin_layout.css'));
 	      $this->template->write('_styles', $styles);
 	}
 	
@@ -32,10 +32,8 @@ class Admin extends CI_Controller {
 		
 		//Render sub-views
 		$this->template->write('title_addition', 'Admin');
-		$this->template->write_view('header_user_info', 'header_user_info_default');
-		
-		$error = array('error' => '');
-		$this->template->write_view('body', 'admin/upload_message/body', $error);
+	
+		$this->template->write_view('body', 'admin/body');
       
 		//Render template
 		

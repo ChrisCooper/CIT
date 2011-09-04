@@ -50,8 +50,11 @@ $template['active_template'] = 'default';
 |
 */
 
-
-// ---- DEFAULT ----
+/*
+|--------------------------------------------------------------------------
+| Default Template Configuration (adjust this or create your own)
+|--------------------------------------------------------------------------
+*/
 
 $template['default']['template'] = 'template';
 $template['default']['regions'] = array(

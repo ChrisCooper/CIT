@@ -1,32 +1,71 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
 
 class Welcome extends CI_Controller {
-
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -  
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
-	public function index()
+       
+	public function __construct()
 	{
-		$this->load->view('welcome_message');
+		parent::__construct();
+		$this->load->library('template');
+		
+		$this->load->helper(array(
+			'url',
+			'resource',
+			'form',
+			'path',
+		));
+		
+                $this->load->database();
 	}
 	
-	public function extension()
+	function _static_parts() {
+	      //Render sub-views
+	      $this->template->write_view('header_user_info', 'header_user_info_default');
+		
+	      $styles = style_tag(style_url('layout.css'));
+	      $styles = $styles . style_tag(style_url('admin_layout.css'));
+	      $this->template->write('_styles', $styles);
+	}
+	
+	function index()
 	{
-		$this->load->view('welcome_message_extension');
+		$this->_static_parts();
+		
+		//Render sub-views
+		$this->template->write('title_addition', 'Admin - Home');
+		
+		$this->template->write_view('body', 'body');
+		$this->template->write_view('menu', 'menu');
+		
+		//Render template
+		
+		$this->template->render();
+	}
+	
+	function do_upload_message()
+	{
+		$config['upload_path'] = set_realpath('messages/');
+		$config['allowed_types'] = 'mp3|wav';
+		$config['max_size'] = '40000';
+		$config['file_name'] = 
+
+		$this->load->library('upload', $config);
+
+		if ( ! $this->upload->do_upload())
+		{
+			$error = array('error' => $this->upload->display_errors());
+
+			$this->template->write_view('body', 'admin/upload_message/body', $error);
+		}
+		else
+		{
+			$data = array('upload_data' => $this->upload->data());
+
+			$this->template->write_view('body', 'admin/upload_message_success/body', $data);
+		}
+		//Render template
+		$this->template->render();
+		echo $config['upload_path'];
 	}
 }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+?>
