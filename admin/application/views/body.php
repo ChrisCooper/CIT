@@ -18,7 +18,7 @@
 </p>
 <br />
 <p>
- <a href="<?= site_url("admin/messages/new"); ?>">Upload a new message</a>
+ <a href="<?= site_url("admin/messages/create"); ?>">Upload a new message</a>
 </p>
 
 <p>

@@ -14,9 +14,14 @@
  
  
  <div id="upload_form">
-  <?php echo $error;?>
+  <div id="validation_errors">
+   <?=validation_errors(); ?>
+   <p>
+    <?=$upload_errors?>
+   </p>
+  </div>
 
- <?php echo form_open_multipart('admin/do_upload_message');?>
+ <?= form_open_multipart('admin/messages/create');?>
 
  Title: 
  <?php $data = array(
@@ -24,6 +29,8 @@
               'id'          => 'message_title',
               'maxlength'   => '255',
               'size'        => '50',
+              'value'       => set_value('title'),
+              
             );
 
  echo form_input($data); ?><br /><br />
@@ -34,17 +41,18 @@
               'id'          => 'message_author',
               'maxlength'   => '255',
               'size'        => '50',
+              'value'       => set_value('author'),
             );
 
  echo form_input($data); ?><br /><br />
 
 
- <input type="file" name="userfile" size="20" />
+ <input type="file" name="userfile" size="20" value="<?=set_value('author')?>"/>
  <p>Max file size: 40MB</p>
 
  <br /><br />
 
- <input type="submit" value="upload" />
+ <input type="submit" name="submit" value="upload" />
 
 </form>
  </div>

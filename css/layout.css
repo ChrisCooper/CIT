@@ -167,3 +167,10 @@
 	margin-left: 30px;
 	width: 260px;
 }
+
+#footer #copy a {
+	color: #555;	
+}
+#footer #copy a:hover {
+	color: rgb(50,50,150);	
+}

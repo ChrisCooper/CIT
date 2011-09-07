@@ -2,69 +2,154 @@
 
 class Messages extends CI_Controller {
        
-	public function __construct()
-	{
-		parent::__construct();
-		$this->load->library('template');
-		
-		$this->load->helper(array(
-			'url',
-			'resource',
-			'form',
-			'path',
-		));
-		
-                $this->load->database();
-	}
-	
-	function _static_parts() {
-	      //Render sub-views
-	      $this->template->write_view('header_user_info', 'header_user_info_default');
-		
-	      $styles = style_tag(style_url('layout.css'));
-	      $styles = $styles . style_tag(style_url('admin_layout.css'));
-	      $this->template->write('_styles', $styles);
-	}
-	
-	function index()
-	{
-		$this->_static_parts();
-		
-		//Render sub-views
-		$this->template->write('title_addition', 'Admin');
-	
-		$this->template->write_view('body', 'admin/body');
-      
-		//Render template
-		
-		$this->template->render();
-	}
-	
-	function do_upload_message()
-	{
-		$config['upload_path'] = set_realpath('messages/');
-		$config['allowed_types'] = 'mp3|wav';
-		$config['max_size'] = '40000';
-		$config['file_name'] = 
+    public function __construct() {
+        parent::__construct();
+        $this->load->library('template');
+        
+        $this->load->helper(array(
+                'url',
+                'resource',
+                'form',
+                'path',
+        ));
+        
+        $this->load->database();
+        
+        $this->load->model('message');
+    }
+    
+    function _static_parts() {
+        //Render sub-views
+        $this->template->write_view('header_user_info', 'header_user_info_default');
+          
+        $styles = style_tag(style_url('layout.css'));
+        $styles = $styles . style_tag(style_url('admin_layout.css'));
+        $this->template->write('_styles', $styles);
+        $this->template->write_view('menu', 'menu');
+    }
+    
+    function index() {
+        redirect('/admin/messages/page/1', 'refresh');
+    }
+    
+    
+    function page($page_number=1) {
+        if ($page_number < 1){
+            redirect('/admin/messages/page/1', 'refresh');
+        }
+        
+        $this->_static_parts();
+        
+        $this->template->write('title_addition', 'Admin - Messages');
+        
+        $messages = $this->message->get_ten_entries_from_page($page_number);
+        
+        if ($messages === FALSE){
+            
+            if ($page_number > 1) {
+                redirect('/admin/messages/page/1', 'refresh');
+            } else {
+                $this->template->write('body', 'There are no messages to display at this time.');
+                $this->template->render();
+            }
+            
+        } else {
+            $this->load->library('pagination');
 
-		$this->load->library('upload', $config);
+            $config['base_url'] = site_url("admin/messages/page/");;
+            $config['total_rows'] = Message::count();
+            $config['per_page'] = 2;
+            
+            print_r($config);
+            echo "</br>";
+            echo "Page Number: " . $page_number;
+    
+            $this->pagination->initialize($config);
+            
+            $message_markup = "";
+            
+            foreach ($messages as $message) {
+                $message_markup .= $this->load->view('messages/individual_message', $message, true);
+            }
+            
+            $view_info['messages'] = $message_markup;
+            $view_info['pagination_links'] = $this->pagination->create_links();
+        
+            $this->template->write_view('body', 'messages/body', $view_info);
+            
+            $this->template->render();
+        }
+    }
+    
+    function create_success() {
+        $this->_static_parts();
+            
+        $this->template->write('title_addition', 'Admin - Message Created');
+    
+        $this->template->write_view('body', 'messages/create_success/body');
+        
+        $this->template->render();
+    }
+   
+    
+    function create(){
+        $form_validation_config = array(
+            array(
+                  'field'   => 'title', 
+                  'label'   => 'Title', 
+                  'rules'   => 'trim|required|max_length[250]|xss_clean'
+            ),
+            array(
+                  'field'   => 'author', 
+                  'label'   => 'Author', 
+                  'rules'   => 'trim|max_length[250]|xss_clean'
+            ),
+        );
+        
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules($form_validation_config);
+        
+        if (isset($_POST['submit']) && $this->form_validation->run()){
+            $this->_perform_file_upload_validation();
+        } else {
+            $view_info = array();
+            $view_info['upload_errors'] = "";
+            $this->_render_create_view($view_info);
+        }
+    }
 
-		if ( ! $this->upload->do_upload())
-		{
-			$error = array('error' => $this->upload->display_errors());
+    function _perform_file_upload_validation(){
+        $message = new Message;
+        $message->title = $this->input->post('title');
+        $message->author = $this->input->post('author');
+        $message->date_recorded = time();
+        
+        $config['upload_path'] = set_realpath('../messages/');
+        $config['allowed_types'] = 'mp3|wav';
+        $config['max_size'] = '40000';
+        $config['file_name'] = $message->get_and_set_filename();
 
-			$this->template->write_view('body', 'admin/upload_message/body', $error);
-		}
-		else
-		{
-			$data = array('upload_data' => $this->upload->data());
-
-			$this->template->write_view('body', 'admin/upload_message_success/body', $data);
-		}
-		//Render template
-		$this->template->render();
-		echo $config['upload_path'];
-	}
+        $this->load->library('upload', $config);
+        
+        $was_uploaded = $this->upload->do_upload();
+        $upload_error = $this->upload->display_errors();
+        if ($was_uploaded){
+            $message->insert_self();
+            redirect('/admin/messages/create_success/', 'refresh');
+        } else {
+            $view_info = array();
+            $view_info['upload_errors'] = $upload_error;
+            $this->_render_create_view($view_info);
+        }
+    }
+    
+    function _render_create_view($view_info) {
+        $this->_static_parts();
+        $this->template->write('title_addition', 'Admin - New Message');
+        $this->template->write_view('body', 'messages/create/body', $view_info);
+        
+        $this->template->render();
+    }
 }
 
 ?>
