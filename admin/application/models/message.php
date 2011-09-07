@@ -22,26 +22,16 @@ class Message extends CI_Model {
         return $CI->db->count_all_results('messages');
     }
     
-    function get_ten_entries_from_page($page_number=1)
-    {
-        if ($page_number < 1) {
-            return FALSE;
-        }
-        
+    function get_ten_entries_from_offset($offset=0)
+    {   
         $this->db->select('*')
         ->from('messages')
         ->order_by("title")
-        ->limit(2, 2*($page_number-1));
+        ->limit(10, $offset+1);
         $query = $this->db->get();
-        
-        //$query = $this->db->query("SELECT * FROM messages ORDER BY title LIMIT 40, 10");
         
         if ($query->num_rows() > 0) {
             $res = $query->result();
-            //echo $res;
-            
-            //print_r($res);
-            //echo "</br>";
            return $res;
         } else {
             return FALSE;

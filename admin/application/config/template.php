@@ -81,6 +81,7 @@ $template['default']['regions'] = array(
         'wrapper' => '<div>',
         'attributes' => array('id' => 'content')
     ),
+    'external_scripts',
 );
 
 $template['default']['parser'] = 'parser';

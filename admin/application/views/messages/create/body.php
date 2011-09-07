@@ -45,7 +45,9 @@
             );
 
  echo form_input($data); ?><br /><br />
-
+ 
+ <p>Message Date: <input type="text" name="date_recorded" id="datepicker"></p>
+<br />
 
  <input type="file" name="userfile" size="20" value="<?=set_value('author')?>"/>
  <p>Max file size: 40MB</p>

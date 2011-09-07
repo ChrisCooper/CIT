@@ -2,3 +2,5 @@ user_guide/
 ignored_files/
 *.kpf
 messages/
+admin/application/config/database.php
+public/application/config/database.php

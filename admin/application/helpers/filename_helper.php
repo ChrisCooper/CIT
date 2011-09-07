@@ -31,7 +31,7 @@ if ( ! function_exists('reduce_to_alpha_num'))
 {
 	function reduce_to_alpha_num($string)
 	{
-		$acceptable = "abcdefghijklmnopqrstuvqxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ";
+		$acceptable = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ";
 		$length = mb_strlen($string);
 		$result = "";
 		

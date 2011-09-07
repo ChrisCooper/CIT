@@ -9,6 +9,7 @@
    <?= $_styles ?>
    
    <?= $_scripts ?>
+   <?= $external_scripts ?>
    
 </head>
 
