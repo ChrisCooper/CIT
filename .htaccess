@@ -5,7 +5,7 @@
 
     #__ Rewrite requests to anything here through index.php,
     #__ except requests already through it, or resource requests
-    RewriteCond %{REQUEST_URI}  !^/(admin|public|images|css|scripts|messages)/.*
+    RewriteCond %{REQUEST_URI}  !^/(admin|public|images|message_series|css|scripts|messages)/.*
     RewriteRule ^(.*)$ /public/$1 [L]
 
 </IfModule>

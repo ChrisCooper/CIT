@@ -37,9 +37,16 @@ class Message extends CI_Model {
             return FALSE;
         }
     }
+    
+    function delete_model_by_id($delete_id) {
+        if ($delete_id === FALSE) {
+            return;
+        }
+        $this->db->delete('messages', array('id' => $delete_id));
+    }
 
     function get_and_set_filename() {
-        $this->filename = filename_from_string($this->title, "../messages");
+        $this->filename = filename_from_string($this->title, "../messages", "mp3");
         return $this->filename;
     }
 

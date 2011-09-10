@@ -49,8 +49,8 @@
  <p>Message Date: <input type="text" name="date_recorded" id="datepicker"></p>
 <br />
 
- <input type="file" name="userfile" size="20" value="<?=set_value('author')?>"/>
- <p>Max file size: 40MB</p>
+ <p>Recording: <input type="file" name="userfile" size="20" value=""/></p>
+ <p>Max file size: 40MB, allowed-types: mp3, wav</p>
 
  <br /><br />
 

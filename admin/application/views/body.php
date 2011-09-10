@@ -35,6 +35,6 @@
 </p>
 <br />
 <p>
- <a href="<?= site_url("admin/messages_series/new"); ?>">Create a new message series</a>
+ <a href="<?= site_url("admin/message_series/create"); ?>">Create a new message series</a>
 </p>
 </div>

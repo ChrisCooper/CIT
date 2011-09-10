@@ -14,5 +14,29 @@
         <p>
             Recorded: <?=$date_recorded;?>
         </p>
+        <p>
+            <span>
+                <?php
+                    $hidden = array('id' => $id);
+                    echo form_open('admin/messages/confirm_deletion', '', $hidden);
+                ?>
+    
+                <input type="submit" name="submit" value="Delete" />
+               
+               </form>
+           
+           </span>
+            <span>
+                <?php
+                     $hidden = array('id' => $id);
+                     echo form_open('admin/messages/edit/', '', $hidden);
+                 ?>
+     
+                 <input type="submit" name="submit" value="Edit" />
+                
+                </form>
+           </span>
+
+        </p>
     </div>   
 </div>

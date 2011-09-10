@@ -130,7 +130,7 @@ class Messages extends CI_Controller {
         $message->date_recorded = time();
         
         $config['upload_path'] = set_realpath('../messages/');
-        $config['allowed_types'] = 'mp3|wav';
+        $config['allowed_types'] = 'mp3';
         $config['max_size'] = '40000';
         $config['file_name'] = $message->get_and_set_filename();
 
@@ -146,6 +146,32 @@ class Messages extends CI_Controller {
             $view_info['upload_errors'] = $upload_error;
             $this->_render_create_view($view_info);
         }
+    }
+    
+    function confirm_deletion() {
+        $this->_static_parts();
+        
+        $this->template->write('title_addition', 'Admin - Confirm Message Deletion');
+    
+        $view_info['id'] = $this->input->post('id');
+        $this->template->write_view('body', 'messages/confirm_deletion/body', $view_info);
+        
+        $this->template->render();
+    }
+    
+    function delete() {
+        $success = Message::delete_model_by_id($this->input->post('id'));
+        redirect('/admin/messages/deletion_success/', 'refresh');
+    }
+    
+    function deletion_success() {
+        $this->_static_parts();
+            
+        $this->template->write('title_addition', 'Admin - Message Deleted');
+    
+        $this->template->write_view('body', 'messages/deletion_success/body');
+        
+        $this->template->render();
     }
     
     function _render_create_view($view_info) {

@@ -4,3 +4,4 @@ ignored_files/
 messages/
 admin/application/config/database.php
 public/application/config/database.php
+.htpasswd
