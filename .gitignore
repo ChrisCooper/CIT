@@ -2,6 +2,7 @@ user_guide/
 ignored_files/
 *.kpf
 messages/
+message_series/
 admin/application/config/database.php
 public/application/config/database.php
 .htpasswd

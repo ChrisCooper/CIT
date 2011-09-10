@@ -42,6 +42,16 @@ class Message extends CI_Model {
         if ($delete_id === FALSE) {
             return;
         }
+        $this->db->select('filename')
+        ->from('messages')
+        ->where("id", $delete_id);
+        $query = $this->db->get();
+        $res = $query->result();
+        
+        $filename = $res[0]->filename;
+        
+        unlink(set_realpath("../messages/") . $filename);
+        
         $this->db->delete('messages', array('id' => $delete_id));
     }
 
