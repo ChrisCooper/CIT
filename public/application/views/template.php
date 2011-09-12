@@ -16,7 +16,7 @@
    <div id="wrapper">
      
       <div id="header">
-          <a href="<?= site_url(""); ?>">Home</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="<?= site_url("contact_us");?>">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<?= $header_user_info ?>
+          <a href="<?= site_url(""); ?>">Home</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="<?= site_url("contact_us");?>">Contact Us</a>&nbsp;&nbsp;<?= $header_user_info ?>
       </div>
      
       <div id="logo">
@@ -44,7 +44,7 @@
     
       <div id="footer">
          <div id="minilogo"><a href="<?= site_url(""); ?>"><img src="<?= image_url("CIT-Mini-Logo.png"); ?>" width="126" height="47" alt="minilogo" longdesc="Church In Toronto" /></a></div>
-         <div id="sitemap"><a href="<?= site_url(""); ?>">Home</a>  &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<?= site_url("about"); ?>">About</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<?= site_url("media"); ?>">Media</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<?= site_url("ministries"); ?>">Ministries</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<?= site_url("community"); ?>">Community</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<?= site_url("about/service_time_location"); ?>">Service Times and Location</a> &nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?= site_url("contact_us"); ?>">  Contact Us</a></div>
+         <div id="sitemap"><a href="<?= site_url(""); ?>">Home</a>  &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<?= site_url("about"); ?>">About</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<?= site_url("media"); ?>">Media</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<?= site_url("ministries"); ?>">Ministries</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<?= site_url("community"); ?>">Community</a> &nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<?= site_url("about/service_time_location"); ?>">Service Times and Location</a> &nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?= site_url("contact_us"); ?>">  Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?= site_url("admin/"); ?>">Admin</a></div>
          <div id="copy">Copyright 2011 Church In Toronto. All Rights Reserved.</div>
       </div>
    

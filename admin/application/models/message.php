@@ -26,15 +26,12 @@ class Message extends CI_Model {
     {   
         $this->db->select('*')
         ->from('messages')
-        ->order_by("title")
+        ->order_by("date_recorded", "DESC")
         ->limit(10, $offset+1);
         $query = $this->db->get();
         
         if ($query->num_rows() > 0) {
             $res = $query->result();
-            foreach ($res as $message){
-                //$message->series_filename = $this->fetch_series_filename($message->series_id);
-            }
            return $res;
         } else {
             return FALSE;
@@ -80,6 +77,9 @@ class Message extends CI_Model {
     function insert_self()
     {
         $this->series_id = $this->input->post('series_id');
+        $date = $this->input->post('date_recorded');
+        $date = date("Y-m-d",strtotime($date));
+        $this->date_recorded = $date;
         $this->date_uploaded = date('Y-m-d');
 
         $this->db->insert('messages', $this);
