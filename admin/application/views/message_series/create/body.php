@@ -46,7 +46,7 @@
 
  echo form_input($data); ?><br /><br />
 
- <p>Recording:<input type="file" name="userfile" size="20" value=""/></p>
+ <p>Image:<input type="file" name="userfile" size="20" value=""/></p>
  <p>Max file size: 100KB, allowed type: png </p>
 
  <br /><br />

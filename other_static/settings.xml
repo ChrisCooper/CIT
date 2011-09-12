@@ -1,0 +1,18 @@
+<!-- Select all the contents of this file and copy-paste them over your settings.xml file before publishing the Banner Rotator on your website. After publishing, you can anytime manually edit the settings.xml file directly from your web server if you wish to make fast changes in your configuration -->
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<generalOptions imagesXML="other_static/images.xml" styleCSS="css/style.css" bannerWidth="470" bannerHeight="294" randomImages="false" randomTransitions="false" imageFitting="bestFit" autoStart="true" firstWithTransition="true" autoTiming="false" pauseOnMouseOver="false" loadNextImageInBack="false" backgroundColor="" />
+<transitions value="1" />
+<imageEffects type="none" zoomPercent="20" duration="1" direction="left" hZoomPos="random" vZoomPos="random" />
+<preloaderOptions show="false"/>
+<controlsOptions show="true" hPos="right" vPos="bottom" padding="10" alignment="horizontal" numbersOverNextButton="false" />
+<controlsOrder value="numbers" />
+<textOptions show="false" embedFont="true" hPos="left" vPos="bottom" width="0" height="0" padding="12" distance="0" />
+<textEffects slide="true" alpha="true" blur="true" appear="bottom" function="Strong" method="easeOut" duration="1.2" bodyDelay="0.8" />
+<textBackground type="wide" alpha="50" headColor="0xFFFFFF" padding="5" cornerRadius="0" />
+<buttonOptions shape="square" size="12" symbolSize="4" spacing="6" />
+<buttonColors back="0xFFFFFF" symbol="0x222222" alpha="90" />
+<buttonColorsOver back="0xAAAAAA" symbol="0xFFFFFF" alpha="100" />
+<numberColors back="0x000000" symbol="0x000000" alpha="40" />
+<numberColorsOver back="0x999999" symbol="0xFFFFFF" alpha="50" />
+<selectedNumberColors back="0x000000" symbol="0x000000" alpha="80" />

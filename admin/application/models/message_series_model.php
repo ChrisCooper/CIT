@@ -19,6 +19,15 @@ class Message_series_model extends CI_Model {
         return $CI->db->count_all_results('message_series');
     }
     
+    function get_dropdown_info() {
+        $this->db->select('id, title')
+        ->from('message_series');
+        $query = $this->db->get();
+        
+        $res = $query->result();
+        return $res;
+    }
+    
     function get_ten_entries_from_offset($offset=0)
     {   
         $this->db->select('*')

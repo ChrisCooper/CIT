@@ -1,10 +1,10 @@
 <div id="message">
-    <a href="" onclick="window.open('<?= site_url("listen/play/" . $filename); ?>','mywindow','width=550,height=160')">
-        <img src="<?= image_url("Luke-Icon.png"); ?>" width="50" height="50" alt="luke" />
+    <a href="" onclick="window.open('<?= site_url("messages/" . $filename); ?>','mywindow','width=550,height=160')">
+        <img src="<?= site_url("message_series/" . $series_filename); ?>" width="50" height="50"/>
     </a>
     <div id="info">
         <strong>
-            <a href="" class="message_title"onclick="window.open('<?= site_url("listen/play/" . $filename);?>','mywindow','width=550,height=160')">
+            <a href="" class="message_title"onclick="window.open('<?= site_url("messages/" . $filename);?>','mywindow','width=550,height=160')">
              <?=$title;?>
             </a>
         </strong>
@@ -28,11 +28,10 @@
            </span>
             <span>
                 <?php
-                     $hidden = array('id' => $id);
-                     echo form_open('admin/messages/edit/', '', $hidden);
+                     //$hidden = array('id' => $id);
+                     //echo form_open('admin/messages/edit/', '', $hidden);
+                     //echo '<input type="submit" name="submit" value="Edit" />';
                  ?>
-     
-                 <input type="submit" name="submit" value="Edit" />
                 
                 </form>
            </span>

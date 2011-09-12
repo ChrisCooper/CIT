@@ -16,6 +16,7 @@ class Messages extends CI_Controller {
         $this->load->database();
         
         $this->load->model('message');
+        $this->load->model('message_series_model');
     }
     
     function _static_parts() {
@@ -74,6 +75,7 @@ class Messages extends CI_Controller {
             $message_markup = "";
             
             foreach ($messages as $message) {
+                $message->series_filename = Message::fetch_series_filename($message->series_id);
                 $message_markup .= $this->load->view('messages/individual_message', $message, true);
             }
             
@@ -118,7 +120,19 @@ class Messages extends CI_Controller {
             $this->_perform_file_upload_validation();
         } else {
             $view_info = array();
+            
             $view_info['upload_errors'] = "";
+            
+            $temp_series = new Message_series_model;
+            
+            $all_series = $temp_series->get_dropdown_info();
+            
+            $view_info['options'] = array();
+            
+            foreach ($all_series as $series) {
+                $view_info['options'][$series->id] = $series->title;
+            }
+            
             $this->_render_create_view($view_info);
         }
     }

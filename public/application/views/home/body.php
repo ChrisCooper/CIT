@@ -1,19 +1,19 @@
 <div id="banner">
     <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="470" height="294" id="FlashID" title="banner">
-       <param name="movie" value="banner.swf" />
+       <param name="movie" value="scripts/banner.swf" />
        <param name="quality" value="high" />
        <param name="wmode" value="opaque" />
        <param name="swfversion" value="8.0.35.0" />
        <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you donÕt want users to see the prompt. -->
-       <param name="expressinstall" value="Scripts/expressInstall.swf" />
+       <param name="expressinstall" value="scripts/expressInstall.swf" />
        <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
        <!--[if !IE]>-->
-       <object type="application/x-shockwave-flash" data="banner.swf" width="470" height="294">
+       <object type="application/x-shockwave-flash" data="scripts/banner.swf" width="470" height="294">
           <!--<![endif]-->
           <param name="quality" value="high" />
           <param name="wmode" value="opaque" />
           <param name="swfversion" value="8.0.35.0" />
-          <param name="expressinstall" value="Scripts/expressInstall.swf" />
+          <param name="expressinstall" value="scripts/expressInstall.swf" />
           <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
           <div>
              <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>

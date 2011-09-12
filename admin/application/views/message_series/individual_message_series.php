@@ -3,7 +3,7 @@
     <div id="info">
         <strong>
             <p>
-                <?=$title;?> , <?=$id;?>
+                <?=$title;?>
             </p>
         </strong>
         <p>
@@ -23,12 +23,10 @@
            </span>
             <span>
                 <?php
-                     $hidden = array('id' => $id);
-                     echo form_open('admin/message_series/edit/', '', $hidden);
+                     //$hidden = array('id' => $id);
+                     //echo form_open('admin/message_series/edit/', '', $hidden);
+                     //echo '<input type="submit" name="submit" value="Edit" />';
                  ?>
-     
-                 <input type="submit" name="submit" value="Edit" />
-                
                 </form>
            </span>
 

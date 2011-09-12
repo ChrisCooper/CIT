@@ -32,10 +32,27 @@ class Message extends CI_Model {
         
         if ($query->num_rows() > 0) {
             $res = $query->result();
+            foreach ($res as $message){
+                //$message->series_filename = $this->fetch_series_filename($message->series_id);
+            }
            return $res;
         } else {
             return FALSE;
         }
+    }
+    
+    function fetch_series_filename($series_id){
+
+        $this->db->select('filename')
+        ->from('message_series')
+        ->where('id', $series_id);
+        $query = $this->db->get();
+        
+        if ($query->num_rows() > 0) {
+            $res = $query->result();
+            return $res[0]->filename; 
+        }
+        return "";    
     }
     
     function delete_model_by_id($delete_id) {

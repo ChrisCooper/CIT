@@ -46,11 +46,15 @@
 
  echo form_input($data); ?><br /><br />
  
+ Message Series:
+ 
+ <?=form_dropdown('series_id', $options, ''); ?><br /><br />
+ 
  <p>Message Date: <input type="text" name="date_recorded" id="datepicker"></p>
 <br />
 
  <p>Recording: <input type="file" name="userfile" size="20" value=""/></p>
- <p>Max file size: 40MB, allowed-types: mp3, wav</p>
+ <p>Max file size: 40MB, allowed-types: mp3</p>
 
  <br /><br />
 
