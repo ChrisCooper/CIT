@@ -6,3 +6,5 @@ message_series/
 admin/application/config/database.php
 public/application/config/database.php
 .htpasswd
+OLD_STATIC_SITE/
+logs/

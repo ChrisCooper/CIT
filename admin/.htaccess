@@ -1,7 +1,7 @@
-#AuthType Digest
-#AuthName "Admin_area"
-#AuthDigestFile /Users/chriscooper/Programming/Webroot/.htpasswd
-#Require user churchintoronto
+AuthType Basic
+AuthName "Admin_area"
+AuthUserFile /Users/chriscooper/Programming/Webroot/.htpasswd
+Require user churchintoronto
 
 <IfModule mod_rewrite.c>
 
