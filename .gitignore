@@ -8,3 +8,8 @@ public/application/config/database.php
 .htpasswd
 OLD_STATIC_SITE/
 logs/
+.bash_history
+.viminfo
+.mysql_history
+htconfig/
+
