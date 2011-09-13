@@ -11,3 +11,6 @@ logs/
 .bash_history
 .viminfo
 .mysql_history
+htconfig/
+public/application/config/config.php
+admin/application/config/config.php
