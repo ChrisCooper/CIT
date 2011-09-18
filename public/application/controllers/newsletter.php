@@ -5,6 +5,7 @@
             parent::__construct();
             $this->load->library('template');
             $this->load->library('email');
+            $this->config->load('cit');
             $this->load->helper(array(
                 'url',
                 'resource',
@@ -17,13 +18,13 @@
     
         $form_validation_config = array(
             array(
-                  'field'   => 'name', 
-                  'label'   => 'Name', 
+                  'field'   => 'name',
+                  'label'   => 'Name',
                   'rules'   => 'trim|max_length[250]|xss_clean'
             ),
             array(
-                  'field'   => 'email', 
-                  'label'   => 'Email', 
+                  'field'   => 'email',
+                  'label'   => 'Email',
                   'rules'   => 'trim|required|valid_email|max_length[250]|xss_clean'
             ),
         );
@@ -34,7 +35,7 @@
         if (isset($_POST['submit']) && $this->form_validation->run()){
             
             $this->email->from('newsletter@s371491580.onlinehome.us', 'CIT Newsletter');
-            $this->email->to('chriscooper1991@gmail.com');
+            $this->email->to($this->config->item('cit_newsletter_signup_email'));
             
             $this->email->subject('CIT Newsletter Signup');
             $message = $this->input->post('name') . "\n" . $this->input->post('email');
