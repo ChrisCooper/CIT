@@ -34,7 +34,7 @@
         
         if (isset($_POST['submit']) && $this->form_validation->run()){
             
-            $this->email->from('newsletter@s371491580.onlinehome.us', 'CIT Newsletter');
+            $this->email->from($this->config->item('cit_newsletter_from_email'), 'CIT Newsletter');
             $this->email->to($this->config->item('cit_newsletter_signup_email'));
             
             $this->email->subject('CIT Newsletter Signup');
