@@ -16,8 +16,8 @@
     //Full urls can be used too, e.g.
     //"www.images.com/google_image.png" => "www.google.com",
     $config['homepage_rotator'] = array(
-                                        image_url("Community-Ad.png") => site_url(''),
-                                        image_url("Kids-Camp-Ad.jpg") => site_url(''),
+                                        "images/Community-Ad.png" => "",
+                                        "images/Kids-Camp-Ad.jpg" => "",
                                         );
 
 ?>
