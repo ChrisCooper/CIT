@@ -28,7 +28,8 @@ class Home extends CI_Controller {
   $(function(){
   $("#slider1").bxSlider({
     auto: true,
-    autoControls: true,
+    controls: false,
+    autoControls: false,
     pause: 4000,
     mode: "fade",
   });
