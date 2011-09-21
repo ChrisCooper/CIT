@@ -67,7 +67,9 @@ class Media extends CI_Controller {
             $message_markup = "";
             
             foreach ($messages as $message) {
-                $message->series_filename = Message::fetch_series_filename($message->series_id);
+		$message_series = $this->message->fetch_series_filename_and_title($message->series_id);
+                $message->series_filename = $message_series->filename;
+                $message->title = $message_series->title . " - " . $message->title;
                 $message_markup .= $this->load->view('media/individual_message', $message, true);
             }
             
