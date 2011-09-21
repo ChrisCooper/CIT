@@ -14,3 +14,5 @@ logs/
 htconfig/
 public/application/config/config.php
 admin/application/config/config.php
+.lesshst
+.bash_profile
