@@ -12,4 +12,5 @@ logs/
 .viminfo
 .mysql_history
 htconfig/
-
+.lesshst
+.bash_profile
