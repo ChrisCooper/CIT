@@ -121,9 +121,12 @@ class Messages extends CI_Controller {
         if (isset($_POST['submit']) && $this->form_validation->run()){
             $this->_perform_file_upload_validation();
         } else {
+            
             $view_info = array();
             
-            $view_info['upload_errors'] = "No errors.";
+            $view_info['upload_errors'] = "No errors.</br>";
+            
+            print_r($_POST);
             
             $this->_render_create_view($view_info);
         }
