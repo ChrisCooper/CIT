@@ -66,7 +66,7 @@ class Messages extends CI_Controller {
             $this->load->library('pagination');
 
             $config['base_url'] = site_url("admin/messages/item/");;
-            $config['total_rows'] = Message::count();
+            $config['total_rows'] = $this->message->count();
             $config['per_page'] = 10;
             $config['num_links'] = 7;
         
@@ -75,7 +75,9 @@ class Messages extends CI_Controller {
             $message_markup = "";
             
             foreach ($messages as $message) {
-                $message->series_filename = Message::fetch_series_filename($message->series_id);
+                $message_series = $this->message->fetch_series_filename_and_title($message->series_id);
+                $message->series_filename = $message_series->filename;
+                $message->title = $message_series->title . " - " . $message->title;
                 $message_markup .= $this->load->view('messages/individual_message', $message, true);
             }
             
@@ -174,7 +176,7 @@ class Messages extends CI_Controller {
     }
     
     function delete() {
-        $success = Message::delete_model_by_id($this->input->post('id'));
+        $success = $this->message->delete_model_by_id($this->input->post('id'));
         redirect('/admin/messages/deletion_success/', 'refresh');
     }
     
