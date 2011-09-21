@@ -35,7 +35,7 @@
       <?= $content ?>
      
       <div id="social">
-         <div id="newsletter"><a href="" onClick="window.open('newsletter','mywindow','width=500,height=370')"><img src="<?= image_url("CIT-Newsletter-SM-BTN.png"); ?>" width="214" height="18" alt="newsletter" /></a></div>
+         <div id="newsletter"><a href="" onClick="window.open('<?= site_url('newsletter') ?>','mywindow','width=500,height=370')"><img src="<?= image_url("CIT-Newsletter-SM-BTN.png"); ?>" width="214" height="18" alt="newsletter" /></a></div>
          <div id="blog"><a href="http://www.churchintoronto.blogspot.com"><img src="<?= image_url("CIT-Blog-SM-BTN.png"); ?>" width="115" height="32" alt="blog" /></a></div>
          <div id="flickr"><a href="http://www.flickr.com/photos/62810833@N08/"><img src="<?= image_url("CIT-Flickr-SM-BTN.png"); ?>" width="62" height="21" alt="flickr" /></a></div>
          <div id="vimeo"><a href="http://vimeo.com/join"><img src="<?= image_url("CIT-Vimeo-BTN.png"); ?>" width="72" height="26" alt="vimeo" /></a></div>
