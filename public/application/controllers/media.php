@@ -79,20 +79,6 @@ class Media extends CI_Controller {
             $this->template->render();
         }
     }
-	
-	/*function index() {
-		
-		//Render sub-views
-        $this->template->write_view('header_user_info', 'header_user_info_default');
-		
-		$this->template->write('title_addition', 'Media');
-		$this->template->write_view('body', 'media/body');
-       
-		$this->_write_resources();
-       
-		//Render template
-		$this->template->render();
-	}*/
 }
 
 ?>

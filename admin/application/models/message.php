@@ -38,18 +38,18 @@ class Message extends CI_Model {
         }
     }
     
-    function fetch_series_filename($series_id){
+    function fetch_series_filename_and_title($series_id){
 
-        $this->db->select('filename')
+        $this->db->select('filename, title')
         ->from('message_series')
         ->where('id', $series_id);
         $query = $this->db->get();
         
         if ($query->num_rows() > 0) {
             $res = $query->result();
-            return $res[0]->filename; 
+            return $res[0]; 
         }
-        return "";    
+        return new Message_series_model;    
     }
     
     function delete_model_by_id($delete_id) {
