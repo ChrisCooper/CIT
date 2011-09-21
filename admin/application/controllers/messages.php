@@ -123,17 +123,7 @@ class Messages extends CI_Controller {
         } else {
             $view_info = array();
             
-            $view_info['upload_errors'] = "";
-            
-            $temp_series = new Message_series_model;
-            
-            $all_series = $temp_series->get_dropdown_info();
-            
-            $view_info['options'] = array();
-            
-            foreach ($all_series as $series) {
-                $view_info['options'][$series->id] = $series->title;
-            }
+            $view_info['upload_errors'] = "No errors.";
             
             $this->_render_create_view($view_info);
         }
@@ -193,6 +183,15 @@ class Messages extends CI_Controller {
     function _render_create_view($view_info) {
         $this->_static_parts();
         $this->template->write('title_addition', 'Admin - New Message');
+        
+        $all_series = $this->message_series_model->get_dropdown_info();
+            
+        $view_info['options'] = array();
+            
+        foreach ($all_series as $series) {
+            $view_info['options'][$series->id] = $series->title;
+        }
+        
         $this->template->write_view('body', 'messages/create/body', $view_info);
         
         $this->template->render();
