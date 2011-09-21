@@ -25,15 +25,18 @@ class Home extends CI_Controller {
 		$scripts = '<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
 <script src="scripts/jquery.bxSlider.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-  $(function(){
-  $("#slider1").bxSlider({
-    auto: true,
-    controls: false,
-    autoControls: false,
-    pause: 4000,
-    mode: "fade",
-  });
-});
+	$(function(){
+		//console.log($("#slider1"));
+		var slider = $("#slider1");
+		slider.bxSlider({
+			auto: true,
+			controls: false,
+			autoControls: false,
+			pause: 4000,
+			mode: "fade",
+		});
+		console.log(slider.parent().css("width","470"));
+	});
 </script>';
 		
 		$this->template->write('_scripts', $scripts);
