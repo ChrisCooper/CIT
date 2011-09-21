@@ -157,7 +157,7 @@ class Messages extends CI_Controller {
             redirect('/admin/messages/create_success/', 'refresh');
         } else {
             $view_info = array();
-            $view_info['upload_errors'] = $upload_error;
+            $view_info['upload_errors'] = "There was a problem with the upload.</br>" . $upload_error;
             $this->_render_create_view($view_info);
         }
     }
