@@ -1,5 +1,5 @@
 <div id="left">
- <h2>
+<h2>
   Search
  </h2>
  
@@ -48,21 +48,17 @@ Before this date: <input type="text" name="date_recorded_before" id="datepicker_
 </form>
   
  </p>
-</div>
+	</div>
 
-<div id="right">
- <h1>
-  Messages by date
- </h1>
- <p>
-    &nbsp;
- </p>
- <div id="all_messages">
-  <?=$messages;?>
- </div>
- 
- <div id="pagination_links">
-  <?=$pagination_links;?>
- </div>
- 
-</div>
+	<div id="right">
+	 <h1>
+	   Messages by date
+	    </h1>
+	     <p>
+	         &nbsp;
+		  </p>
+		       
+			   <p>
+			   There are currently no messages to display.
+			   </p>
+			    </div>
