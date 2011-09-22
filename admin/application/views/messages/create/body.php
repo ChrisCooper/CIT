@@ -21,7 +21,7 @@
    </p>
   </div>
 
- <?= form_open_multipart('admin/messages/create?uploaded=yes');?>
+ <?= form_open_multipart('admin/messages/create');?>
 
  Title: 
  <?php $data = array(
