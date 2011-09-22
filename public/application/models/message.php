@@ -37,6 +37,20 @@ class Message extends CI_Model {
         }
     }
     
+    function get_message_by_id($id) {
+        
+        $this->db->select('*')
+        ->from('messages')
+        ->where('id', $id);
+        $query = $this->db->get();
+        
+        if ($query->num_rows() > 0) {
+            $res = $query->result();
+            return $res[0]; 
+        }
+        return new Message;   
+    }
+    
     function fetch_series_filename_and_title($series_id){
 
         $this->db->select('filename, title')
