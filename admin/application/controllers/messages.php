@@ -118,15 +118,15 @@ class Messages extends CI_Controller {
         $this->load->library('form_validation');
         $this->form_validation->set_rules($form_validation_config);
         
-        if (isset($_POST['submit']) && $this->form_validation->run()){
+        //print_r($_POST);
+        
+        if ((isset($_POST['submit']) || isset($_GET['uploaded'])) && $this->form_validation->run()){
             $this->_perform_file_upload_validation();
         } else {
             
             $view_info = array();
             
-            $view_info['upload_errors'] = "No errors.</br>";
-            
-            print_r($_POST);
+            $view_info['upload_errors'] = "";
             
             $this->_render_create_view($view_info);
         }
