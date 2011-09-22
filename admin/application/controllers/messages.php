@@ -120,7 +120,7 @@ class Messages extends CI_Controller {
         
         //print_r($_POST);
         
-        if ((isset($_POST['submit']) || isset($_GET['uploaded'])) && $this->form_validation->run()){
+        if (isset($_POST['submit']) && $this->form_validation->run()){
             $this->_perform_file_upload_validation();
         } else {
             
