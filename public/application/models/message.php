@@ -81,10 +81,10 @@ class Message extends CI_Model {
             $this->db->where('series_id', $this->input->get('series_id'));
         } 
         if ($this->message->is_filled('date_recorded_after')) {
-            $this->db->where('date_recorded >', $this->input->get('date_recorded_after'));
+            $this->db->where('date_recorded >', date("Y-m-d",strtotime($this->input->get('date_recorded_after'))));
         }
         if ($this->message->is_filled('date_recorded_before')) {
-            $this->db->where('date_recorded <', $this->input->get('date_recorded_before'));
+            $this->db->where('date_recorded <', date("Y-m-d",strtotime($this->input->get('date_recorded_before'))));
         }
     }
     
