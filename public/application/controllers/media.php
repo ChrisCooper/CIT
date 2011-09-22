@@ -28,7 +28,15 @@ class Media extends CI_Controller {
                       background-repeat: repeat-x;
                 }</style>';
 		$this->template->write_view('header_user_info', 'header_user_info_default');
-	        $this->template->write('_styles', $styles);
+		
+		$styles .= '<link rel="stylesheet" href="http://jqueryui.com/themes/base/jquery.ui.all.css">';
+		$this->template->write('_styles', $styles);
+		
+		$this->template->write("_scripts", "<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js'></script>");
+		$this->template->write("_scripts", "<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'></script>");
+		$this->template->write("_scripts", '<script> $(function() {$( "#datepicker_before" ).datepicker();}); </script>');
+		$this->template->write("_scripts", '<script> $(function() {$( "#datepicker_after" ).datepicker();}); </script>');
+		
 	}
 	
      function index() {
