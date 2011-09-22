@@ -86,7 +86,7 @@ class Media extends CI_Controller {
 	$message = $this->message->get_message_by_id($message_id);
 	$message_series = $this->message->fetch_series_filename_and_title($message->series_id);
 	$message->series_filename = $message_series->filename;
-	$message->series_title = $message_series->title . " - " . $message->title;
+	$message->series_title = $message_series->title;
 	
 	$this->load->view('media/listen/all', $message);
     }
