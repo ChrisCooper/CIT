@@ -62,7 +62,4 @@ Before this date: <input type="text" name="date_recorded_before" id="datepicker_
 			   There are currently no messages to display.
 			   </p>
 			    </div>
-<<<<<<< HEAD
-			    
-=======
->>>>>>> 29a3a702a4162c24c0f0cee08e241f290bcd8972
+
