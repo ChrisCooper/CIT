@@ -1,17 +1,27 @@
 <div id="left">
-     <h2>
-      Why Visit Us?
-     </h2>
-     <p>
-      Community focused church with something for everyone.
-     </p>
+     <h1>Directions</h1>
+      <h2>From Bessarian Station</h2>
+      <li>Head West along Sheppard Ave towards Bessarian/Burbank St.</li>
+      <li>Stay on the South side of Sheppard Ave until you reach the Church In Toronto</li>
+      <br />
+      <h2>From Hwy 401 East (Bayview Ave)</h2>
+      <li>Heading East on Hwy 401 take Exit 371 for Bayview Ave</li>
+      <li>Turn Left onto Bayview Ave</li>
+      <li>Continue North and then turn Right onto Sheppard Ave</li>
+      <li>Continue East on Sheppard Ave until you reach the the Church In Toronto</li>
+      <br />
+      <h2>From 401 West (Leslie St)</h2>
+      <li>Heading West on Hwy 401 take Exit 373 for Leslie St</li>
+      <li>Turn Right onto Leslie St</li>
+      <li>Continue North and then turn Left onto Sheppard Ave</li>
+      <li>Continue West on Sheppard Ave (past Canadian Tire) until you reach the Church In Toronto</li>
     </div>
     <div id="right">
      <h1>
       Service Location
      </h1>
-     <p>
-      &nbsp;
+     <p>&nbsp;
+      
      </p>
      <h2>
       Sunday Schedule
@@ -20,6 +30,9 @@
      <div id="schedright">
       <p>
        Lord's Table
+      </p>
+      <p>
+       Kids Service
       </p>
       <p>
        Classes
@@ -33,33 +46,33 @@
      </div>
      <div id="schedleft">
       <p>
-       9:30
+       9:30 AM
       </p>
       <p>
-       10:00
+       10:00 AM
       </p>
       <p>
-       10:45
+       10:00 AM
       </p>
       <p>
-       11:00
+       10:45 AM
+      </p>
+      <p>
+       11:00 AM
       </p>
      </div>
      <br />
      <h2>
       Address
      </h2>
+     <p>&nbsp;</p>
      <p>
-      Church In Toronto
-     </p>
+      <strong>Church In Toronto</strong></p>
      <p>
       671 Sheppard Ave. East
      </p>
      <p>
-      North York, Ontario, Canada
-     </p>
-     <p>
-      M2K 1B6
+      Toronto, ON M2K 1B6
      </p>
      <br />
      <h2>

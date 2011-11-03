@@ -1,17 +1,17 @@
 <div id="left">
-     <h2>
-      Why Visit Us?
-     </h2>
+     <h1>
+      Church Leadership
+     </h1>
      <p>
-      Community focused church with something for everyone.
+      Here at the Church In Toronto we follow the New Testament pattern of leadership. A number of men with spiritual maturity and good character are appointed as elders (1 Tim. 3:1-7). They watch over or oversee the believers and shepherd or pastor God's church by their teaching, exhorting and example (1 Peter 5:1-3). To pastor is an elder's function, rather than a distinct position. Having multiple elders ensures a team approach, rather than a dominant individual leader. Some elders and other believers in our Church community serve in a full-time capacity. 
      </p>
     </div>
     <div id="right">
      <h1>
       Church Staff
      </h1>
-     <p>
-      &nbsp;
+     <p>&nbsp;
+      
      </p>
      <div id="staff1">
       <h2>
@@ -57,8 +57,8 @@
      <h1>
       Elders
      </h1>
-     <p>
-      &nbsp;
+     <p>&nbsp;
+      
      </p>
      <div id="elder1">
       <h2>

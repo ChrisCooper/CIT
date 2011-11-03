@@ -1,8 +1,7 @@
 <div id="left">
- <h2>
+ <h1>
   Search
- </h2>
- 
+ </h1>
  <br/>
  <p>
     
@@ -52,10 +51,10 @@ Before this date: <input type="text" name="date_recorded_before" id="datepicker_
 
 <div id="right">
  <h1>
-  Messages by date
+  Messages by Date
  </h1>
- <p>
-    &nbsp;
+ <p>&nbsp;
+    
  </p>
  <div id="all_messages">
   <?=$messages;?>

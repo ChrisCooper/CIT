@@ -1,4 +1,5 @@
 user_guide/
+.ssh/
 ignored_files/
 *.kpf
 messages/

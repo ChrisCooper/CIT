@@ -17,9 +17,10 @@ class Home extends CI_Controller {
 		$styles = $styles . style_tag(style_url('rotator_layout.css'));
 		$styles = $styles . '<style type="text/css">
                  body {
-                      background-image: url(images/CIT-Background.png);
-                      background-repeat: repeat-x;
-                }</style>';
+					background-image: url(../images/CIT-Home-Backgound.jpg);
+					background-repeat:no-repeat;
+					background-position:center top; 
+					}</style>';
 	        $this->template->write('_styles', $styles);
 		
 		$scripts = '<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>

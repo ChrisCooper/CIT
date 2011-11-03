@@ -1,31 +1,30 @@
 <div id="updates">
     <div id="info">
        <div id="icon"><img src="<?= image_url("CIT-Audio-Icon.png"); ?>" width="76" height="52" alt="audio" /></div>
-       <div id="text"><a href="<?= site_url("media"); ?>">Luke: Following the Master's Footsteps</a>
-          <h1>The Good Samaritan- a Parable with a Punch Line - Nigel Tomes</h1>
-          <p>Who really was the Good Samaritan and how does his story apply to us today</p>
+       <div id="text"><a href="<?= site_url("media"); ?>">Luke: Following in the Master's Footsteps</a>
+          <h1>Building Community Among Believers - Nigel Tomes</h1>
+          <h2>October 23rd, 2011</h2>
        </div>
     </div>
     <div id="info">
-       <div id="icon"><img src="<?= image_url("CIT-Video-Icon.png"); ?>" width="76" height="52" alt="video" /></div>
+       <div id="icon"><img src="<?= image_url("CIT-Pics-Icon.png"); ?>" width="76" height="52" alt="event" /></div>
        <div id="text">
-          <a href="#">Kids Camp Promo Video</a></strong>
-          <p>Kids Camp is coming up August 2nd - 5th. Get registered now next sunday at church</p>
-          <h2></h2>
+          <a href="http://www.flickr.com/photos/62810833@N08/">Kids Night Pictures</a>
+          <p>Some great photos are now available on the Church In Toronto flickr. Thank you everyone for coming out and a special thanks to all the families that helped with the culture songs.</p>
        </div>
     </div> 
     <div id="info">
        <div id="icon"><img src="<?= image_url("CIT-Blog-Icon.png"); ?>" width="76" height="52" alt="blog" /></div>
        <div id="text">
-          <a href="#">Book Review - The Practice of the Presence of God</a></strong>
-          <p>Brother Lawrence was a man of humble beginnings who discovered the greatest secret of living in the Kingdom of God here on earth: the art of practicing the presence of God.</p>
+          <a href="http://churchintoronto.blogspot.com/2011/10/why-we-must-think-rightly-about-god.html">Why We Must Think Rightly About God</a></strong>
+          <p>Ian shares A.W. Tozer's insight with us for the next number of days, and gives us some of his impressions of Tozer's work and considerations of God.</p>
        </div>
     </div>
     <div id="info">
        <div id="icon"><img src="<?= image_url("CIT-News-Icon.png"); ?>" width="76" height="52" alt="news" /></div>
        <div id="text">
-          <a href="#">Business Meeting</a></strong>
-          <p>The Annual Business Meeting of the corporation of The Church In Toronto will be held on June 26th 2011. Please check bulletin board at church for members list.</p>
+          <a href="http://churchintoronto.blogspot.com/2011/10/blog-post.html">Del In Africa</a></strong>
+          <p>Del Martin is currently in Africa spending three weeks in Eldoret, Kenya and one week in Kampala, Uganda where he will be joined by John Carbrey. Please Pray for the brothers and follow Del on the church blog.</p>
        </div>
     </div>  
  </div>
@@ -33,13 +32,15 @@
  <div id="servloc">
     <div id="times">
        <h1>Sunday Schedule</h1>
-       <br />
+       
        <div id="left"><p>Communion<br />
           Classes<br />
+          Kids Service<br />
           Coffee Break<br />
           Worship Service</p>
        </div>
        <div id="right"><p>9:30 AM<br />
+          10:00 AM<br />
           10:00 AM<br />
           10:45 AM<br />
           11:00 AM</p>
@@ -47,11 +48,11 @@
     </div>
     <div id="address">
        <h1>Address</h1>
-       <br />
-       <p>Church In Toronto <br />
-       671 Sheppard Ave. East <br />
-       Toronto, ON, M2K 1B6</p>
-       <p>T:  (416) 221-7610</p>
-       <p>E: info@churchintoronto.org</p>
+      	<p><strong>Church In Toronto</strong><br />
+      	 671 Sheppard Ave. East <br />
+     	 Toronto, ON, M2K 1B6</p>
+      	<p>T:  (416) 221-7610</p>
+      	<a href="<?= site_url("about/service_time_location"); ?>"><h2>Map and Directions</h2></a>
+      
     </div>
  </div>

@@ -2,16 +2,15 @@
      <h2>
       Contact Information
      </h2>
-     <p>
-      &nbsp;
+     <p>&nbsp;
+      
      </p>
      <p>
-      Church In Toronto
+      <strong>Church In Toronto</strong><br />
+      671 Sheppard Ave. East,
       <br />
-      671 Sheppard Ave. E.,
-      <br />
-      North York, ON M2K 1B6
-     </p>
+      Toronto, ON M2K 1B6
+  </p>
      <p>
       <br />
       T. (416) 221-7610
@@ -26,13 +25,13 @@
        <h1>
         Have a Question
        </h1>
-       <p>
-        &nbsp;
+       <p>&nbsp;
+        
        </p>
        <p>
         Want to know more about us and how you can be involved, prayer request or general inquiry?
         <br />
-        Place your email here and we'll get back to you and answer any quesions you have.
+        Place your name and email here and we'll get back to you and answer any quesions you have.
        </p>
        <br />
        <p>

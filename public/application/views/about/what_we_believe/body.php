@@ -1,7 +1,7 @@
 <div id="left">
-     <h2>
+     <h1>
       Why Visit Us?
-     </h2>
+     </h1>
      <p>
       Community focused church with something for everyone.
      </p>
@@ -10,9 +10,10 @@
      <h1>
       What We Believe
      </h1>
-     <p>
-      &nbsp;
+     <p>&nbsp;
+      
      </p>
+     <div id="image3"><img src="../images/CIT-Believe.jpg" width="320" height="210" alt="believe" /></div>
      <h2>
       The Scriptures
      </h2>

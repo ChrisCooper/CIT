@@ -63,4 +63,7 @@
 	border-right-style: none;
 	border-bottom-style: none;
 	border-left-style: none;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
 }

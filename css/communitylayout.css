@@ -90,12 +90,12 @@
 #wrapper #body {
 }
 #wrapper #body #main {
-	background-image: url(../images/CIT-Community-CS.png);
+	background-image: url(../images/CIT-Community-Main.gif);
 	background-repeat: no-repeat;
 	background-position: center center;
 	margin: 0px;
 	padding: 0px;
-	height: 300px;
+	height: 550px;
 }
 #wrapper #body #main #connect {
 	margin-top: 130px;

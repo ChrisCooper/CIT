@@ -18,3 +18,6 @@
 		      added = blue
 		        changed = green
 			  untracked = red
+[user]
+	name = Chris_Cooper CIT_Server
+	email = chriscooper1991@gmail.com
