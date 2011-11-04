@@ -12,6 +12,7 @@ class Home extends CI_Controller {
 		
 		$this->load->database();
 		$this->load->model('message');
+		$this->load->model('message_series_model');
 	}
 	
 	function _write_resources() {
@@ -54,7 +55,13 @@ class Home extends CI_Controller {
 		$this->template->write_view('header_user_info', 'header_user_info_default');
 		$view_info = array();
 		$view_info['homepage_rotator'] = $this->config->item('homepage_rotator');
-		$view_info['latest_message'] = $this->message->latest_message();
+		
+		$latest_message = $this->message->latest_message();
+		$message_series = $this->message->fetch_series_filename_and_title($latest_message->series_id);
+		$latest_message->series_filename = $message_series->filename;
+
+		$view_info['latest_message'] = $latest_message;
+		
 		$this->template->write_view('body', 'home/body', $view_info);
 		$this->template->write_view('content', 'home/content');
 		

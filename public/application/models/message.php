@@ -124,7 +124,7 @@ class Message extends CI_Model {
     
     function latest_message(){
         
-        $this->db->select('id, title, author, date_recorded')
+        $this->db->select('id, series_id, title, author, date_recorded')
         ->from('messages')
         ->order_by("date_recorded", "DESC")
         ->limit(1);
