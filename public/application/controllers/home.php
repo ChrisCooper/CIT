@@ -15,7 +15,7 @@ class Home extends CI_Controller {
 	}
 	
 	function _write_resources() {
-	        $styles = style_tag(style_url('layout.css'));
+	    $styles = style_tag(style_url('layout.css'));
 		$styles = $styles . style_tag(style_url('home_layout.css'));
 		$styles = $styles . style_tag(style_url('rotator_layout.css'));
 		$styles = $styles . '<style type="text/css">
@@ -54,6 +54,7 @@ class Home extends CI_Controller {
 		$this->template->write_view('header_user_info', 'header_user_info_default');
 		$view_info = array();
 		$view_info['homepage_rotator'] = $this->config->item('homepage_rotator');
+		$view_info['latest_message'] = $this->message->latest_message();
 		$this->template->write_view('body', 'home/body', $view_info);
 		$this->template->write_view('content', 'home/content');
 		

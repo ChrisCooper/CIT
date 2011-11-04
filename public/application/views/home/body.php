@@ -14,8 +14,8 @@
     </div>
     <div id="bottom">
       
-      	<div id="icon"><a href="<?= site_url("media"); ?>"></a></div>
-      	<div id="text"><h1>Building Community Among Believers</h1>Nigel Tomes - October 23rd 2011</div>
+      	<div id="icon"><a href="" onclick="window.open('<?= site_url("media/listen/" . $latest_message->id); ?>','mywindow','width=476,height=245')"></a></div>
+      	<div id="text"><h1><?= $latest_message->title;?></h1><?= $latest_message->author;?> - <?= $latest_message->date_recorded;?></div>
  
     </div>
  </div>

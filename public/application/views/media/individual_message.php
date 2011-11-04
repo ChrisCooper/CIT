@@ -4,7 +4,7 @@
     </a>
     <div id="info">
         <strong>
-            <a href="" class="message_title"onclick="window.open('<?= site_url("media/listen/" . $id);?>','mywindow','width=476,height=245')">
+            <a href="" class="message_title" onclick="window.open('<?= site_url("media/listen/" . $id);?>','mywindow','width=476,height=245')">
              <?=$title;?>
             </a>
         </strong>

@@ -109,6 +109,32 @@ class Message extends CI_Model {
         $this->message->prepare_serach_query();
         return $this->db->count_all_results('messages');
     }
+    
+    function latest_message(){
+        
+        $this->db->select('id, title, author, date_recorded')
+        ->from('messages')
+        ->order_by("date_recorded", "DESC")
+        ->limit(1);
+        
+        
+        $query = $this->db->get();
+        $messages = $query->result();
+        $message = $messages[0];
+    
+        $title_max = 47;
+        if (strlen($message->title) > $title_max) {
+            $message->title = substr($message->title, 0, $title_max - 3) . '...';
+        }
+        $author_max = 30;
+        if (strlen($message->author) > $author_max) {
+            $message->author = substr($message->author, 0, $author_max - 3) . '...';
+        }
+        
+        $message->date_recorded = date("F j, Y ", strtotime($message->date_recorded));
+        
+        return $message;
+    }
 }
 
 ?>
