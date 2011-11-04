@@ -12,7 +12,7 @@
             <?= $author;?>
         </p>
         <p>
-            <?=$date_recorded;?>
+            <?=$date_recorded;?> - <a href="" class="message_title" onclick="window.open('<?= site_url("media/listen/" . $id);?>','mywindow','width=476,height=245')">Listen</a> - <a href="" class="message_title" onclick="window.open('<?= site_url("media/download/" . $id);?>','message_download')">Download</a>
         </p>
     </div>   
 </div>

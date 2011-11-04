@@ -10,7 +10,8 @@ class Media extends CI_Controller {
 		'url',
 		'resource',
 		'path',
-		'form'
+		'form',
+		'download',
         ));
         
         $this->load->database();
@@ -197,13 +198,26 @@ class Media extends CI_Controller {
     }
     
     function listen($message_id) {
-	$message = $this->message->get_message_by_id($message_id);
-	$message_series = $this->message->fetch_series_filename_and_title($message->series_id);
-	$message->series_filename = $message_series->filename;
-	$message->series_title = $message_series->title;
-	
-	$this->load->view('media/listen/all', $message);
+		$message = $this->message->get_message_by_id($message_id);
+		$message_series = $this->message->fetch_series_filename_and_title($message->series_id);
+		$message->series_filename = $message_series->filename;
+		$message->series_title = $message_series->title;
+		
+		$this->load->view('media/listen/all', $message);
     }
+    		
+	function download($message_id) {
+		$message = $this->message->get_message_by_id($message_id);
+		
+		if ($message->series_id == -1) {
+				show_404("download");
+				return;
+		}
+		
+		$message_data = file_get_contents("../messages/" . $message->filename);
+		
+		force_download($message->title . ".mp3", $message_data);
+	}
 }
 
 ?>

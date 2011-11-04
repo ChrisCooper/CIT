@@ -93,7 +93,10 @@
 	font-size: 12px;
 	text-decoration: none;
 	font-weight: bold;
-	color: #F93;
+	color: rgb(255,153,51);
+}
+#body #right #message #info a:hover {
+	color: rgb(150,120,40);
 }
 #body #right h1 {
 	color: #072a3b;
