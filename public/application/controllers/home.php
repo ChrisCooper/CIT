@@ -9,6 +9,9 @@ class Home extends CI_Controller {
 		$this->load->helper('url');
 		$this->load->helper('resource');
 		$this->load->config('cit');
+		
+		$this->load->database();
+		$this->load->model('message');
 	}
 	
 	function _write_resources() {
@@ -33,7 +36,7 @@ class Home extends CI_Controller {
 			auto: true,
 			controls: false,
 			autoControls: false,
-			pause: 4000,
+			pause: 6000,
 			mode: "fade",
 		});
 		console.log(slider.parent().css("width","470"));
