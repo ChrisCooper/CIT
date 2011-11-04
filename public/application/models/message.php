@@ -13,6 +13,7 @@ class Message extends CI_Model {
         // Call the Model constructor
         parent::__construct();
         $this->load->helper('file');
+        $this->load->helper('presentation');
     }
     
     static function count()
@@ -31,6 +32,9 @@ class Message extends CI_Model {
         
         if ($query->num_rows() > 0) {
             $res = $query->result();
+            foreach ($res as $message){
+                $message->date_recorded = MySQL_to_pretty_date($message->date_recorded);
+            }
            return $res;
         } else {
             return FALSE;
@@ -46,6 +50,9 @@ class Message extends CI_Model {
         
         if ($query->num_rows() > 0) {
             $res = $query->result();
+            foreach ($res as $message){
+                $message->date_recorded = MySQL_to_pretty_date($message->date_recorded);
+            }
             return $res[0]; 
         }
         return new Message;   
@@ -99,6 +106,11 @@ class Message extends CI_Model {
         
         if ($query->num_rows() > 0) {
             $res = $query->result();
+            
+            foreach ($res as $message){
+                $message->date_recorded = MySQL_to_pretty_date($message->date_recorded);
+            }
+            
            return $res;
         } else {
             return FALSE;
@@ -122,16 +134,9 @@ class Message extends CI_Model {
         $messages = $query->result();
         $message = $messages[0];
     
-        $title_max = 47;
-        if (strlen($message->title) > $title_max) {
-            $message->title = substr($message->title, 0, $title_max - 3) . '...';
-        }
-        $author_max = 30;
-        if (strlen($message->author) > $author_max) {
-            $message->author = substr($message->author, 0, $author_max - 3) . '...';
-        }
-        
-        $message->date_recorded = date("F j, Y ", strtotime($message->date_recorded));
+        $message->title = truncate($message->title, 47);
+        $message->author = truncate($message->author, 30);
+        $message->date_recorded = MySQL_to_pretty_date($message->date_recorded);
         
         return $message;
     }
