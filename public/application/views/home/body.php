@@ -15,8 +15,9 @@
     <div id="bottom">
       
       	<div id="icon">
+            
             <a href="" onclick="window.open('<?= site_url("media/listen/" . $latest_message->id); ?>','mywindow','width=476,height=245')">
-                <img src="<?= site_url("message_series/" . $latest_message->series_filename); ?>" width="275" height="200" alt="Latest Message" />
+                <img src="<?= site_url("message_series/" . $latest_message->series_filename); ?>" width="275" height="200" alt="Latest Message"/>
             </a>
         </div>
       	<div id="text"><h1><?= $latest_message->title;?></h1><?= $latest_message->author;?> - <?= $latest_message->date_recorded;?></div>
