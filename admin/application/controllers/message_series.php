@@ -153,9 +153,9 @@ class Message_series extends CI_Controller {
         
         $config['upload_path'] = set_realpath('../message_series/');
         $config['allowed_types'] = 'png';
-        $config['max_size']	= '100';
-	$config['max_width']  = '100';
-	$config['max_height']  = '100';
+        $config['max_size']	= '500';
+        $config['max_width']  = '300';
+        $config['max_height']  = '300';
         $config['file_name'] = $message_series->get_and_set_filename();
 
         $this->load->library('upload', $config);
