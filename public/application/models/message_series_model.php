@@ -24,6 +24,15 @@ class Message_series_model extends CI_Model {
         $query = $this->db->get();
         
         $res = $query->result();
+        
+        foreach ($res as $series) {
+            if (strlen($series->title) > 27) {
+                $series->title = substr($series->title, 0, 24) . '...';
+            }
+
+
+        }
+        
         return $res;
     }
 }
