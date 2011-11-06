@@ -33,7 +33,7 @@
     <div id="times">
        <h1>Sunday Schedule</h1>
        
-       <div id="left"><p>Communion<br />
+       <div id="left"><p>Lord's Table<br />
           Classes<br />
           Kids Service<br />
           Coffee Break<br />

@@ -3,7 +3,8 @@
       Why Visit Us?
      </h1>
      <p>
-      Community focused church with something for everyone.
+      We are a community-focused church with something for everyone. We've really taken the time to make sure that wherever you're from, whatever your background, whoever you are you'll be able to make our church your home, grow closer to God and learn to follow Christ.</p>
+      <p>To get an idea of the church life we experience, please take a look at our <a href="http://www.churchintoronto.com/ministries">Ministries</a> page and don't be shy to jump right in. We love seeing new faces and encourage you to attend one of our services or join one of our fellowship groups.
      </p>
     </div>
     <div id="right">

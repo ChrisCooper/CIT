@@ -2,7 +2,7 @@
     <ul id="slider1" class="demo-wrap">
         <?php
             foreach ($homepage_rotator as $image_url => $link_url) {
-                echo '"<li><a href="' . $link_url . '"><img src="' . $image_url . '" width="470" height="294" alt="minilogo" longdesc="Church In Toronto" /></a></li>"';
+                echo '<li><a href="' . $link_url . '"><img src="' . $image_url . '" width="470" height="294" alt="minilogo" longdesc="Church In Toronto" /></a></li>';
             }
         ?>
     </ul>

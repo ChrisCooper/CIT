@@ -23,7 +23,6 @@
      </p>
     <p><strong>Contact: </strong>Shirley Tomes at tomesfamily@hotmail.com for more info. </p>
     <br />
-    <br />
     
     <div id="image"><img src="../../../../images/CIT-Kids.jpg" width="150" height="100" alt="kids" /></div>
     <h1>

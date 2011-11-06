@@ -9,6 +9,20 @@
    <?= $_styles ?>
    
    <?= $_scripts ?>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26820309-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
    
 </head>
 
@@ -39,7 +53,7 @@
          <div id="blog"><a href="http://www.churchintoronto.blogspot.com"><img src="<?= image_url("CIT-Blog-SM-BTN.png"); ?>" width="115" height="32" alt="blog" /></a></div>
          <div id="flickr"><a href="http://www.flickr.com/photos/62810833@N08/"><img src="<?= image_url("CIT-Flickr-SM-BTN.png"); ?>" width="62" height="21" alt="flickr" /></a></div>
          <div id="vimeo"><a href="http://vimeo.com/join"><img src="<?= image_url("CIT-Vimeo-BTN.png"); ?>" width="72" height="26" alt="vimeo" /></a></div>
-         <div id="facebook"><a href="http://www.facebook.com/pages/CITYouth/53076858532"><img src="<?= image_url("CIT-Facebook-BTN.png"); ?>" width="100" height="22" alt="facebook" /></a></div>
+         <div id="facebook"><a href="http://www.facebook.com/groups/297348566950278/"><img src="<?= image_url("CIT-Facebook-BTN.png"); ?>" width="100" height="22" alt="facebook" /></a></div>
       </div>
     
       <div id="footer">

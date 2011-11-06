@@ -9,6 +9,16 @@
 	margin-top: 16px;
 	margin-left: 14px;
 	padding: 5px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#body #banner a img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
 }
 #body #upevents {
 	clear: none;
@@ -62,6 +72,16 @@
 	float: right;
 	margin-top: 6px;
 	margin-right: 10px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#body #upevents #top #more a img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
 }
 #body #upevents #bottom {
 	height: 250px;

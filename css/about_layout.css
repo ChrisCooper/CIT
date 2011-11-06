@@ -56,6 +56,13 @@ body {
 	font-size: 12px;
 	line-height: 14px;
 }
+#body #left a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #F93;
+	text-decoration: none;
+}
 #body #left li {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
@@ -105,6 +112,8 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 24px;
 	text-decoration: none;
+	display: block;
+	margin-bottom: 10px;
 }
 #body #right h2 {
 	font-family: Arial, Helvetica, sans-serif;
@@ -114,13 +123,14 @@ body {
 #body #right #image {
 	clear: left;
 	float: right;
-	height: 210px;
-	width: 220px;
+	height: 200px;
+	width: 280px;
 	margin-top: 15px;
 	margin-right: 0px;
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 	margin-left: 15px;
-	border: thick solid #EDEDED;
+	border: thick solid #CCCCCC;
+	color: #999;
 }
 #body #right #image2 {
 	clear: right;
@@ -131,16 +141,18 @@ body {
 	margin-bottom: 0px;
 	margin-left: 0px;
 	margin-top: 0px;
-	border: thick solid #EDEDED;
+	border: thick solid #CCCCCC;
+	color: #999;
 }
-#wrapper #body #right #image3 {
+#body #right #image3  {
 	clear: left;
 	float: right;
 	height: 210px;
 	width: 320px;
 	margin-left: 15px;
 	margin-top: 5px;
-	border: thin solid #BDB6B3;
+	border: thin solid #CCCCCC;
+	color: #CCC;
 }
 #body #right #event {
 	height: 50px;
@@ -231,7 +243,7 @@ body {
 #body #right #staff3 {
 	clear: right;
 	float: left;
-	margin-right: 40px;
+	margin-right: 100px;
 	margin-bottom: 25px;
 }
 #body #right #staff4 {
@@ -274,5 +286,13 @@ body {
 	margin-bottom: 25px;
 	clear: right;
 	float: left;
+	margin-right: 420px;
 }
 
+#body #left h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #666;
+	text-decoration: none;
+}

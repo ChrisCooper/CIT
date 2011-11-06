@@ -1,11 +1,11 @@
 <?php
     //This is where signup mails will be sent to
-    $config['cit_newsletter_signup_email'] = 'joshbrinksman@gmail.com';
+    $config['cit_newsletter_signup_email'] = 'ibrinksman@hotmail.com';
     
     //This is the address signup emails are sent from.
     //It may have to be from our domain, so if the site moves to churchintoronto.org,
     //this should probably be changed to newsletter@churchintoronto.org
-    $config['cit_newsletter_from_email'] = 'newsletter@s371491580.onlinehome.us';
+    $config['cit_newsletter_from_email'] = 'newsletter@churchintoronto.com';
 
 
     //Add new entries in here to make additional banner items.
@@ -18,6 +18,7 @@
     $config['homepage_rotator'] = array(
                                         "images/CIT-Welcome-Ad.jpg" => "",
                                         "images/Del-In-Africa-Ad.jpg" => "http://churchintoronto.blogspot.com/",
+										"images/Mums-and-Tots-Ad.jpg" => "",
                                         );
 
 ?>
