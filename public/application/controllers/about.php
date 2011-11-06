@@ -44,6 +44,18 @@ class About extends CI_Controller {
 		$this->template->render();
 	}
 	
+	function staff_elders() {
+		
+		//Render sub-views
+		$this->_static_parts();
+		
+		$this->template->write('title_addition', 'About - Staff & Elders');
+		$this->template->write_view('body', 'about/staff_elders/body');
+       
+		//Render template
+		$this->template->render();
+	}
+	
 	function events() {
 		
 		//Render sub-views
@@ -68,17 +80,6 @@ class About extends CI_Controller {
 		$this->template->render();
 	}
 	
-	function staff_elders() {
-		
-		//Render sub-views
-		$this->_static_parts();
-		
-		$this->template->write('title_addition', 'About - Staff & Elders');
-		$this->template->write_view('body', 'about/staff_elders/body');
-       
-		//Render template
-		$this->template->render();
-	}
 }
 
 ?>

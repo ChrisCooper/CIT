@@ -40,7 +40,7 @@ class Home extends CI_Controller {
 			pause: 6000,
 			mode: "fade",
 		});
-		console.log(slider.parent().css("width","470"));
+		slider.parent().css("width","470");
 	});
 </script>';
 		
